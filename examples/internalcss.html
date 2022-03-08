@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Internal CSS Example</title>
+    <style>
+      div {
+        color: red;
+        font-size: 30px;
+      }
+
+      #firstDiv {
+        color: blue;
+      }
+      .highlight {
+        background-color: yellow;
+        color: black;
+      }
+      .card {
+        border-radius: 24px;
+        /*offset x, offset y, blur radius, spread radius, color,
+         inset(inverts shadow)*/
+        box-shadow: 12px 12px 10px 5px rgba(178, 11, 51, 0.9);
+        color: orange;
+        font-size: 20px;
+        margin: 34px;
+        padding: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="firstDiv" class="card">
+      This is my first internally styled div.
+    </div>
+    <div>This is another div.</div>
+    <div class="highlight">This is another div.</div>
+    <div class="highlight">This is another div.</div>
+  </body>
+    <div class="card">
+      Do fairies have tails? More than that, do they even exist?
+      Nobody knows for sure. So this guild is like them,
+      an eternal mystery, an eternal adventure.
+    </div>
+</html>

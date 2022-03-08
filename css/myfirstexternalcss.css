@@ -1,0 +1,9 @@
+.card {
+  border-radius: 24px;
+  /*offset x, offset y, blur radius, spread radius, color,
+   inset(inverts shadow)*/
+  box-shadow: 12px 12px 10px 5px rgba(178, 11, 51, 0.9);
+  color: orange;
+  font-size: 20px;
+  margin: 34px;
+  padding: 36px;
