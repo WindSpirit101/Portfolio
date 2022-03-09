@@ -1,0 +1,61 @@
+<html lang="en-US">
+  <head>
+    <title>Lists Example</title>
+    <style>
+      #fruitBaskets{
+        list-style-type: square;
+      }
+      #fruitBaskets li{
+        color: #d567e8;
+      }
+      #fruitBaskets li:first-child{
+        color: #d87e41;
+      }
+      #fruitBaskets li:nth-child(3){
+        color: #939b9e;
+      }
+      #myNavBar ul{
+        background: silver;
+        list-style-type: none;
+        padding-inline-start: 0px;
+      }
+      #myNavBar ul li{
+        display: inline-block;
+        padding: 12px 40px;
+      }
+      #myNavBar ul li:hover{
+        background: linear-gradient(56deg, pink, skyblue)
+      }
+      #myNavBar ul li:active{
+        background: linear-gradient(to left, pink, skyblue)
+      }
+      #cta{
+        float: right;
+      }
+    </style>
+  </head>
+  <!--gradient can be as many colors as you wish,
+  with degrees and % for specific colors-->
+  <body>
+    <h1>This is my lists examples page.</h1>
+    <nav id="myNavBar">
+      <ul>
+        <li>Home</li>
+        <li>Gallery</li>
+        <li>About Me</li>
+        <li id="cta">Sign Up</li>
+      </ul>
+    </nav>
+    <ol>
+      <li>Mercury</li>
+      <li>Venus</li>
+      <li>Mars</li>
+      <li>Jupiter</li>
+    </ol>
+    <ul id="fruitBaskets">
+      <li>Cat</li>
+      <li>Rabbit</li>
+      <li>Rat</li>
+    </ul>
+  </body>
+</html>
