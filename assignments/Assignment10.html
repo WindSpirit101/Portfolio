@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Examples Index</title>
+    <style>
+      #colBill{
+        background-color: #bef4c1;
+      }
+      #colMonths{
+        background-color: #f4f9c5;
+      }
+      #monthlyBills,
+      #monthlyBills caption,
+      #monthlyBills th,
+      #monthlyBills td{
+        border: 2px solid white;
+        border-collapse: collapse;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Assignment 10 table.</h1>
+    <table id="monthlyBills">
+      <caption style="
+        background-color: #efc29a;
+        font-weight: bold;">
+        Monthly Bills
+      </caption>
+      <colgroup>
+        <col id="colBill">
+        <col id="colMonths" span="3">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Bill</th>
+          <th>April</th>
+          <th>May</th>
+          <th>June</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight: bold;">Phone</td>
+          <td>$120</td>
+          <td>$140</td>
+          <td>$140</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Gas</td>
+          <td>$90</td>
+          <td>$100</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Food</td>
+          <td>$280</td>
+          <td>$280</td>
+          <td>$300</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
