@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 11</title>
+    <style>
+      .flexChild{
+        background-color: lavander;
+        border: 2px solid grey;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px;
+        padding: 8px 14px;
+        text-align: center;
+        background-color: lavender;
+      }
+      .container{
+        background-color: #a5f2d1;
+        border-radius: 4px;
+        display: flex;
+      }
+      .cats{
+        background-color: mediumpurple;
+        flex-direction: row-reverse;
+      }
+      .mythical{
+        background-color: orchid;
+        flex-wrap: wrap;
+      }
+      .mythical div{
+        flex: 1;
+      }
+      .colors{
+        justify-content: space-between;
+      }
+      .fruits{
+        background-color: teal;
+        align-items: center;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Assignment 11; Flex Examples</h1>
+    <div class="container cats">
+      <div class="flexChild">Leopard</div>
+      <div class="flexChild">Lion</div>
+      <div class="flexChild">Cheetah</div>
+    </div>
+    <div class="container mythical">
+      <div class="flexChild">Dragon</div>
+      <div class="flexChild">Centaur</div>
+      <div class="flexChild">Pixie</div>
+    </div>
+    <div class="container colors">
+      <div class="flexChild">Purple</div>
+      <div class="flexChild">Yellow</div>
+      <div class="flexChild">Blue</div>
+    </div>
+    <div class="container fruits">
+      <div class="flexChild F1">Nectarine</div>
+      <div class="flexChild F2">Blueberry</div>
+      <div class="flexChild F3">Watermelon</div>
+    </div>
+  </body>
+</html>
