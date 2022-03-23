@@ -4,7 +4,7 @@
     <title>About Portfolio Page</title>
     <style>
       header{
-        background-image: url(./images/dandelion_hand.jpg);
+        background-image: url(./images/dandelion-kid.jpg);
         background-position: 50% 55%;
         background-repeat: no-repeat;
         background-size: auto 400px;
@@ -14,17 +14,25 @@
         background-color: #95ceee;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 12px;
-        padding: 20px 20px;
+        justify-content: space-evenly;
+        margin: 8px;
+        padding: 20px;
       }
       section{
         font-family: sans-serif;
         font-weight: lighter;
         text-align: center;
       }
+      #navBar section{
+        flex: 1;
+      }
       #navBar section:hover{
-        background: linear-gradient(to left, #eeab68, white, #f0cc84);
+        background: linear-gradient(to left, #eeab68, #eddf9d, white);
+      }
+      .about p{
+        font-family: sans-serif;
+        font-weight: lighter;
+        text-align: center;
       }
     </style>
   </head>
@@ -50,5 +58,14 @@
       <section><a href="gallery.html">Gallery</a></section>
       <section><a href="index.html">Contact</a></section>
     </nav>
+    <br></br>
+    <div class="about">
+      <p>
+        My name is Leanna, and I am a graphic designer.
+        I am currently still enrolled in college for my degree,
+        but I am trained in adobe Photoshop, XD,
+        Illustrator, Aftereffects, Indesign and Atom.
+      </p>
+    </div>
   </body>
 </html>
