@@ -51,14 +51,16 @@
       /* your CSS for tablet goes in here */
       @media screen and (min-width: 480px) and (max-width: 799px) {
         aside{
-          background-color: inherit;
           display: flex;
         }
-        aside div{
+        aside{
           flex-direction: row;
-          flex-wrap: wrap;
           justify-content: flex-start;
-          max-width: 50%;
+        }
+        .fakeLink2{
+          flex-wrap: wrap;
+          max-width: 799px;
+          min-width: 480px;
         }
       }
 
@@ -67,11 +69,16 @@
         aside{
           display: flex;
         }
-        aside .fakeLink2{
+        aside{
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: flex-start;
-          max-width: 33%;
+        }
+        aside .fakeLink{
+          flex: 1;
+        }
+        aside .fakeLink2{
+          flex: 2;
         }
       }
     </style>
