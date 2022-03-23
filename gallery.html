@@ -10,18 +10,21 @@
         background-size: auto 400px;
         color: black;
       }
-      section{
+      #navBar{
         background-color: #95ceee;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 8px;
+      }
+      section{
         font-family: sans-serif;
         font-weight: lighter;
         text-align: center;
-        padding: 15px;
-        width: 27%;
       }
       #navBar section{
-        display: inline-block;
-        list-style-type: none;
-        padding-inline-start: 0px;
+        flex: 1;
+        padding: 20px;
       }
       #navBar section:hover{
         background: linear-gradient(to left, #eeab68, #eddf9d, white);
