@@ -50,7 +50,14 @@
 
       /* your CSS for tablet goes in here */
       @media screen and (min-width: 480px) and (max-width: 799px) {
-
+        aside{
+          display: grid;
+        }
+        aside .fakeLink,
+        aside .fakeLink2{
+          grid-column: 1/4;
+          grid-row: 3/4;
+        }
       }
 
       /* your CSS for desktop goes in here */
