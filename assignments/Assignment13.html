@@ -5,7 +5,7 @@
     <style>
       header{
         font-family: fantasy;
-        font-size: 50px;
+        font-size: 60px;
         font-variant: small-caps;
         text-align: center;
         color: #9b1256;
@@ -17,31 +17,38 @@
         grid-auto-rows: minmax(50px, auto);
         gap: 20px 10px;
         grid-template-areas:
-          "header header1 header1"
+          "header header1 pic1"
           "sidenav content content"
           "sidenav content1 content1"
-          "pic1 pic1 pic1";
+          "footer footer footer1";
+      }
+      .title{
+        font-family: fantasy;
+        font-size: 22px;
+        font-variant: small-caps;
+        text-align: center;
       }
       .block ol li{
         list-style-type: circle;
       }
       .block img{
-        height: 200px;
+        height: 180px;
+        padding: 10px 100px;
       }
       .block1{
-        background-color: pink;
+        background-color: #eaea9d;
         grid-area: sidenav;
       }
       .block2{
-        background-color: blue;
+        background-color: #9deae8;
         grid-area: content;
       }
       .block3{
-        background-color: purple;
+        background-color: #ef566d;
         grid-area: pic1;
       }
       .block4{
-        background-color: maroon;
+        background-color: #ef6fbb;
         grid-area: header1;
       }
       .block5{
@@ -49,7 +56,7 @@
         grid-area: header;
       }
       .block6{
-        background-color: goldenrod;
+        background-color: #cca609;
         grid-area: content1;
       }
     </style>
@@ -60,12 +67,16 @@
     </header>
     <div class="myGrid">
       <div class="block block1">
-        Pineapple Sage Mojito
+        <div class="title">
+          Pineapple Sage Mojito
+        </div>
         <img src="../images/pineapple-sage-mojito.png"
         alt="pine.sage.mojito">
       </div>
       <div class="block block2">
-        Tropical Bay Breeze
+        <div class="title">
+          Tropical Bay Breeze
+        </div>
         <ol>
           <li>2 ounces pineapple juice</li>
           <li>2 ounces cranberry juice</li>
@@ -76,22 +87,30 @@
           Pour over ice & garnish with oranges, pineapple or cherries</p>
       </div>
       <div class="block block3">
-        Lava Flow
+          <div class="title">
+            Lava Flow
+          </div>
         <img src="../images/lava-flow.png"
         alt="lava.flow">
       </div>
       <div class="block block4">
-        Watermelon Margarita
+          <div class="title">
+            Watermelon Margarita
+          </div>
         <img src="../images/watermelon-marg.png"
         alt="watermelon.marg">
       </div>
       <div class="block block5">
-        Mermaid Water
+          <div class="title">
+            Mermaid Water
+          </div>
         <img src="../images/mermaid-water.png"
         alt="mermaid.water">
       </div>
       <div class="block block6">
-        Dirty Monkey Drink
+          <div class="title">
+            Dirty Monkey Drink
+          </div>
         <ol>
           <li>banana</li>
           <li>1.5 ounce Aged Rum</li>
