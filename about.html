@@ -29,13 +29,13 @@
       #navBar section:hover{
         background: linear-gradient(to left, #eeab68, #eddf9d, white);
       }
-      .about p{
+      #about p{
         font-family: sans-serif;
         font-weight: lighter;
         padding: 20px 20px;
         text-align: center;
       }
-      .about{
+      #about{
         grid-area: content;
       }
       div img{
@@ -55,7 +55,7 @@
         text-align: center;
       }
       #adobe{
-        grid-area: content1;
+        grid-area: content2;
       }
       #education ul{
         font-family: sans-serif;
@@ -66,11 +66,11 @@
         text-align: center;
       }
       #education{
-        grid-are: content2;
+        grid-area: content1;
       }
       main{
         display: grid;
-        grid-template-columns: 1fr 400px 1fr; /* repeat (#, repeating values)*/
+        grid-template-columns: 1fr 250px 1fr; /* repeat (#, repeating values)*/
         grid-auto-rows: minmax(50px, auto);
         gap: 20px 10px;
         grid-template-areas:
@@ -105,20 +105,20 @@
       <section><a href="index.html">Contact</a></section>
     </nav>
     <br></br>
-    <div style="text-align: center">
-      <img id="me"
+    <main>
+      <div id="me" style="text-align: center">
+        <img
            src="./images/me-edited.jpg"
            alt="me.edited"/>
-    </div>
-    <div class="about">
-      <p>
-        My name is Leanna, and I am a graphic designer.
-        I am currently still enrolled in college for my degree,
-        but I am trained in most adobe applications,
-        as listed below, and I am a capable web coder.
-      </p>
-    </div>
-    <main>
+      </div>
+      <div id="about">
+        <p>
+          My name is Leanna, and I am a graphic designer.
+          I am currently still enrolled in college for my degree,
+          but I am trained in most adobe applications,
+          as listed below, and I am a capable web coder.
+        </p>
+      </div>
       <div id="adobe">
         <ul><b>Applications:</b>
           <li>Illustrator</li>
