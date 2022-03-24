@@ -32,26 +32,72 @@
       .about p{
         font-family: sans-serif;
         font-weight: lighter;
+        padding: 20px 20px;
         text-align: center;
+      }
+      .about{
+        grid-area: content;
+      }
+      div img{
+        border-radius: 50%;
+        height: 300px;
+        width: 220px;
+      }
+      #me{
+        grid-area: sidenav;
+      }
+      #adobe ul{
+        font-family: sans-serif;
+        font-weight: lighter;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      #adobe{
+        grid-area: content1;
+      }
+      #education ul{
+        font-family: sans-serif;
+        font-weight: lighter;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      #education{
+        grid-are: content2;
+      }
+      main{
+        display: grid;
+        grid-template-columns: 1fr 400px 1fr; /* repeat (#, repeating values)*/
+        grid-auto-rows: minmax(50px, auto);
+        gap: 20px 10px;
+        grid-template-areas:
+          "header header header"
+          "nav nav nav"
+          "sidenav content content"
+          "sidenav content1 content2"
+          "footer footer footer";
       }
     </style>
   </head>
   <body>
     <header>
       <br></br>
-    <h1 style="
-      font-family: cursive, snell roundhan;
-      font-size: 45px;
-      text-align: center;">
-      Wind Spirit
-    </h1>
-    <h3 style="
-      font-family: sans-serif;
-      font-weight: normal;
-      text-align: center;">
-      Graphic Designer: Leanna Britt
-    </h3>
-    <br></br>
+      <h1 style="
+        font-family: cursive, snell roundhan;
+        font-size: 45px;
+        text-align: center;">
+        Wind Spirit
+      </h1>
+      <h3 style="
+        font-family: sans-serif;
+        font-weight: normal;
+        text-align: center;">
+        Graphic Designer: Leanna Britt
+      </h3>
+      <br></br>
     </header>
     <nav id="navBar">
       <section><a href="about.html">About</a></section>
@@ -59,13 +105,37 @@
       <section><a href="index.html">Contact</a></section>
     </nav>
     <br></br>
+    <div style="text-align: center">
+      <img id="me"
+           src="./images/me-edited.jpg"
+           alt="me.edited"/>
+    </div>
     <div class="about">
       <p>
         My name is Leanna, and I am a graphic designer.
         I am currently still enrolled in college for my degree,
-        but I am trained in adobe Photoshop, XD,
-        Illustrator, Aftereffects, Indesign and Atom.
+        but I am trained in most adobe applications,
+        as listed below, and I am a capable web coder.
       </p>
     </div>
+    <main>
+      <div id="adobe">
+        <ul><b>Applications:</b>
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+          <li>InDesign</li>
+          <li>After Effects</li>
+          <li>XD</li>
+          <li>Atom</li>
+        </ul>
+      </div>
+      <div id="education">
+        <ul><b>Education:</b>
+          <li>High School Diploma</li>
+          <li>Associate's Degree</li>
+          <li>Graphic Design Certificate</li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>
