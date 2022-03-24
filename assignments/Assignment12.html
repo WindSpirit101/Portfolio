@@ -55,12 +55,11 @@
         }
         aside{
           flex-direction: row;
+          flex-wrap: wrap;
           justify-content: flex-start;
         }
         .fakeLink2{
-          flex-wrap: wrap;
-          max-width: 799px;
-          min-width: 480px;
+          flex-basis: 50%;
         }
       }
 
@@ -68,14 +67,13 @@
       @media screen and (min-width: 800px) {
         aside{
           display: flex;
-        }
-        aside{
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: flex-start;
         }
         aside .fakeLink{
-          flex: 1;
+          flex-wrap: nowrap;
+          flex-basis: 100%;
         }
         aside .fakeLink2{
           flex: 2;
