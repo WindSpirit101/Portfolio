@@ -4,10 +4,10 @@
     <title>About Portfolio Page</title>
     <style>
       header{
-        background-image: url(./images/dandelion-kid.jpg);
+        background-image: url(./images/orange-clouds.jpg);
         background-position: 50% 55%;
         background-repeat: no-repeat;
-        background-size: auto 400px;
+        background-size: auto 700px;
         color: white;
       }
       #navBar{
@@ -15,7 +15,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 8px;
+        margin: 5px;
       }
       section{
         font-family: sans-serif;
@@ -27,15 +27,15 @@
         padding: 20px;
       }
       #navBar section:hover{
-        background: linear-gradient(to left, #eeab68, #eddf9d, white);
+        background: linear-gradient(to left, #eea88d, #eddf9d, white);
       }
-      .about p{
+      #about p{
         font-family: sans-serif;
         font-weight: lighter;
         padding: 20px 20px;
         text-align: center;
       }
-      .about{
+      #about{
         grid-area: content;
       }
       div img{
@@ -55,7 +55,7 @@
         text-align: center;
       }
       #adobe{
-        grid-area: content1;
+        grid-area: content2;
       }
       #education ul{
         font-family: sans-serif;
@@ -66,11 +66,11 @@
         text-align: center;
       }
       #education{
-        grid-are: content2;
+        grid-area: content1;
       }
       main{
         display: grid;
-        grid-template-columns: 1fr 400px 1fr; /* repeat (#, repeating values)*/
+        grid-template-columns: 1fr 250px 1fr; /* repeat (#, repeating values)*/
         grid-auto-rows: minmax(50px, auto);
         gap: 20px 10px;
         grid-template-areas:
@@ -79,6 +79,28 @@
           "sidenav content content"
           "sidenav content1 content2"
           "footer footer footer";
+      }
+      footer{
+        background-color: #95ceee;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 5px;
+      }
+      footer section{
+        flex: 1;
+        padding: 20px;
+      }
+      footer section:hover{
+        background: linear-gradient(to left, #eea88d, #eddf9d, white);
+      }
+      @media screen and (max-width: 480px){
+        #navBar section{
+          padding: 10px;
+        }
+        footer section{
+          padding: 10px;
+        }
       }
     </style>
   </head>
@@ -100,25 +122,26 @@
       <br></br>
     </header>
     <nav id="navBar">
+      <section><a href="index.html">Home</a></section>
       <section><a href="about.html">About</a></section>
       <section><a href="gallery.html">Gallery</a></section>
-      <section><a href="index.html">Contact</a></section>
+      <section><a href="contact.html">Contact</a></section>
     </nav>
     <br></br>
-    <div style="text-align: center">
-      <img id="me"
-           src="./images/me-edited.jpg"
-           alt="me.edited"/>
-    </div>
-    <div class="about">
-      <p>
-        My name is Leanna, and I am a graphic designer.
-        I am currently still enrolled in college for my degree,
-        but I am trained in most adobe applications,
-        as listed below, and I am a capable web coder.
-      </p>
-    </div>
     <main>
+      <div id="me" style="text-align: center">
+        <img
+           src="./images/me-edited.jpg"
+           alt="Leanna Britt"/>
+      </div>
+      <div id="about">
+        <p>
+          My name is Leanna, and I am a graphic designer.
+          I am currently still enrolled in college for my degree,
+          but I am trained in most adobe applications,
+          as listed below, and I am a capable web coder.
+        </p>
+      </div>
       <div id="adobe">
         <ul><b>Applications:</b>
           <li>Illustrator</li>
@@ -137,5 +160,11 @@
         </ul>
       </div>
     </main>
+    <footer>
+      <section><a href="index.html">Home</a></section>
+      <section><a href="about.html">About</a></section>
+      <section><a href="gallery.html">Gallery</a></section>
+      <section><a href="contact.html">Contact</a></section>
+    </footer>
   </body>
 </html>
