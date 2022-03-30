@@ -4,10 +4,10 @@
     <title>About Portfolio Page</title>
     <style>
       header{
-        background-image: url(./images/dandelion-kid.jpg);
+        background-image: url(./images/orange-clouds.jpg);
         background-position: 50% 55%;
         background-repeat: no-repeat;
-        background-size: auto 400px;
+        background-size: auto 700px;
         color: white;
       }
       #navBar{
@@ -15,7 +15,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 8px;
+        margin: 5px;
       }
       section{
         font-family: sans-serif;
@@ -27,7 +27,7 @@
         padding: 20px;
       }
       #navBar section:hover{
-        background: linear-gradient(to left, #eeab68, #eddf9d, white);
+        background: linear-gradient(to left, #eea88d, #eddf9d, white);
       }
       #about p{
         font-family: sans-serif;
@@ -80,6 +80,28 @@
           "sidenav content1 content2"
           "footer footer footer";
       }
+      footer{
+        background-color: #95ceee;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 5px;
+      }
+      footer section{
+        flex: 1;
+        padding: 20px;
+      }
+      footer section:hover{
+        background: linear-gradient(to left, #eea88d, #eddf9d, white);
+      }
+      @media screen and (max-width: 480px){
+        #navBar section{
+          padding: 10px;
+        }
+        footer section{
+          padding: 10px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -100,9 +122,10 @@
       <br></br>
     </header>
     <nav id="navBar">
+      <section><a href="index.html">Home</a></section>
       <section><a href="about.html">About</a></section>
       <section><a href="gallery.html">Gallery</a></section>
-      <section><a href="index.html">Contact</a></section>
+      <section><a href="contact.html">Contact</a></section>
     </nav>
     <br></br>
     <main>
@@ -137,5 +160,11 @@
         </ul>
       </div>
     </main>
+    <footer>
+      <section><a href="index.html">Home</a></section>
+      <section><a href="about.html">About</a></section>
+      <section><a href="gallery.html">Gallery</a></section>
+      <section><a href="contact.html">Contact</a></section>
+    </footer>
   </body>
 </html>

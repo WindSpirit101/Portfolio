@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>About Portfolio Page</title>
+    <style>
+      header{
+        background-image: url(./images/dandelion-kid.jpg);
+        background-position: 50% 67%;
+        background-repeat: no-repeat;
+        background-size: auto 600px;
+        color: white;
+      }
+      #navBar{
+        background-color: #95ceee;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 5px;
+      }
+      section{
+        font-family: sans-serif;
+        font-weight: lighter;
+        text-align: center;
+      }
+      #navBar section{
+        flex: 1;
+        padding: 20px;
+      }
+      #navBar section:hover{
+        background: linear-gradient(to left, #eea88d, #eddf9d, white);
+      }
+      footer{
+        background-color: #95ceee;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 5px;
+      }
+      footer section{
+        flex: 1;
+        padding: 20px;
+      }
+      footer section:hover{
+        background: linear-gradient(to left, #eea88d, #eddf9d, white);
+      }
+      @media screen and (max-width: 480px){
+        #navBar section{
+          padding: 10px;
+        }
+        footer section{
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <br></br>
+      <h1 style="
+        font-family: cursive, snell roundhan;
+        font-size: 45px;
+        text-align: center;">
+        Wind Spirit
+      </h1>
+      <h3 style="
+        font-family: sans-serif;
+        font-weight: normal;
+        text-align: center;">
+        Graphic Designer: Leanna Britt
+      </h3>
+      <br></br>
+    </header>
+    <nav id="navBar">
+      <section><a href="index.html">Home</a></section>
+      <section><a href="about.html">About</a></section>
+      <section><a href="gallery.html">Gallery</a></section>
+      <section><a href="contact.html">Contact</a></section>
+    </nav>
+    <br></br>
+    <p>
+    </p>
+    <footer>
+      <section><a href="index.html">Home</a></section>
+      <section><a href="about.html">About</a></section>
+      <section><a href="gallery.html">Gallery</a></section>
+      <section><a href="contact.html">Contact</a></section>
+    </footer>
+
+
+  </body>
+</html>
