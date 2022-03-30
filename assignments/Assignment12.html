@@ -66,6 +66,15 @@
 
       /* your CSS for desktop goes in here */
       @media screen and (min-width: 800px) {
+        nav{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+        nav .fakeLink{
+          flex-wrap: nowrap;
+          flex: 1;
+        }
         aside{
           display: flex;
           flex-direction: row;
@@ -77,7 +86,8 @@
           flex-basis: 100%;
         }
         aside .fakeLink2{
-          flex: 2;
+          flex: 1;
+          padding: 40px;
         }
       }
     </style>
