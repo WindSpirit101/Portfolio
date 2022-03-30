@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 13 Grids</title>
+    <style>
+      header{
+        font-family: fantasy;
+        font-size: 60px;
+        font-variant: small-caps;
+        text-align: center;
+        color: #9b1256;
+      }
+      .myGrid{
+        display: grid;
+        font-family: sans-serif;
+        grid-template-columns: 1fr 400px 1fr;
+        grid-auto-rows: minmax(50px, auto);
+        gap: 20px 10px;
+        grid-template-areas:
+          "header header1 pic1"
+          "sidenav content content"
+          "sidenav content1 content1"
+          "footer footer footer1";
+      }
+      .title{
+        font-family: fantasy;
+        font-size: 22px;
+        font-variant: small-caps;
+        text-align: center;
+      }
+      .block ol li{
+        list-style-type: circle;
+      }
+      .block img{
+        height: 180px;
+        padding: 10px 100px;
+      }
+      .block1{
+        background-color: #eaea9d;
+        grid-area: sidenav;
+      }
+      .block2{
+        background-color: #9deae8;
+        grid-area: content;
+      }
+      .block3{
+        background-color: #ef566d;
+        grid-area: pic1;
+      }
+      .block4{
+        background-color: #ef6fbb;
+        grid-area: header1;
+      }
+      .block5{
+        background-color: aquamarine;
+        grid-area: header;
+      }
+      .block6{
+        background-color: #cca609;
+        grid-area: content1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      Cool Summer Cocktails
+    </header>
+    <div class="myGrid">
+      <div class="block block1">
+        <div class="title">
+          Pineapple Sage Mojito
+        </div>
+        <img src="../images/pineapple-sage-mojito.png"
+        alt="pine.sage.mojito">
+      </div>
+      <div class="block block2">
+        <div class="title">
+          Tropical Bay Breeze
+        </div>
+        <ol>
+          <li>2 ounces pineapple juice</li>
+          <li>2 ounces cranberry juice</li>
+          <li>1 ounce coconut malibu rum</li>
+          <li>splash of grenadine</li>
+        </ol>
+        <p>Combine all ingredients.
+          Pour over ice & garnish with oranges, pineapple or cherries</p>
+      </div>
+      <div class="block block3">
+          <div class="title">
+            Lava Flow
+          </div>
+        <img src="../images/lava-flow.png"
+        alt="lava.flow">
+      </div>
+      <div class="block block4">
+          <div class="title">
+            Watermelon Margarita
+          </div>
+        <img src="../images/watermelon-marg.png"
+        alt="watermelon.marg">
+      </div>
+      <div class="block block5">
+          <div class="title">
+            Mermaid Water
+          </div>
+        <img src="../images/mermaid-water.png"
+        alt="mermaid.water">
+      </div>
+      <div class="block block6">
+          <div class="title">
+            Dirty Monkey Drink
+          </div>
+        <ol>
+          <li>banana</li>
+          <li>1.5 ounce Aged Rum</li>
+          <li>2 tablespoon Banana Liqueur</li>
+          <li>1/2 ounce Kahlua</li>
+          <li>1 dollop Coconut Cream</li>
+          <li>2 ounces Pineapple Juice</li>
+          <li>Chocolate Syrup (for garnish)</li>
+          <li>Whipped Cream (for garnish)</li>
+        </ol>
+        <p>Blend banana, Kahula, banana liqueur, aged rum,
+          ice, and coconut cream.
+          Drizzle some chocolate syrup inside a tall glass,
+          and pour the mixture. Garnish it with whipped cream,
+          chocolate syrup</p>
+      </div>
+    </div>
+  </body>
+</html>
