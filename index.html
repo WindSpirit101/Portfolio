@@ -4,18 +4,27 @@
     <title>Portfolio Landing/Contact Page</title>
     <style>
       header{
-        background-image: url(./images/dandelion-wind.jpg);
-        background-position: 50% 55%;
+        background-image: url(./images/girl-in-clouds.jpg);
+        background-position: 50% 80%;
         background-repeat: no-repeat;
-        background-size: auto 400px;
-        color: silver;
+        background-size: auto 670px;
+      }
+      h1{
+        font-family: cursive, snell roundhan;
+        font-size: 50px;
+        text-align: center;
+      }
+      h3{
+        font-family: sans-serif;
+        font-weight: normal;
+        text-align: center;"
       }
       #navBar{
         background-color: #95ceee;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 8px;
+        margin: 5px;
       }
       section{
         font-family: sans-serif;
@@ -27,45 +36,99 @@
         padding: 20px;
       }
       #navBar section:hover{
-        background: linear-gradient(to left, #eeab68, #eddf9d, white);
+        background: linear-gradient(to left, #eea88d, #eddf9d, white);
+      }
+      main div img{
+        border-radius: 50%;
+        width: 500px;
+        height: 250px;
+      }
+      footer{
+        background-color: #95ceee;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 5px;
+      }
+      footer section{
+        flex: 1;
+        padding: 20px;
+      }
+      footer section:hover{
+        background: linear-gradient(to left, #eea88d, #eddf9d, white);
+      }
+      main{
+        font-family: sans-serif;
+        font-weight: lighter;
+        text-align: center;
+      }
+      @media screen and (max-width: 480px){
+        main div img{
+          width: 300px;
+          height: 150px;
+        }
+        main div p{
+          font-size: 13px;
+        }
+        h1{
+          font-size: 40px;
+        }
+        h3{
+          font-size: 16px;
+        }
+        #navBar section{
+          font-size: 13px;
+          padding: 10px;
+        }
+        footer section{
+          font-size: 13px;
+          padding: 10px;
+        }
       }
     </style>
   </head>
   <body>
     <header>
       <br></br>
-      <h1 style="
-        font-family: cursive, snell roundhan;
-        font-size: 45px;
-        text-align: center;">
+      <h1>
         Wind Spirit
       </h1>
-      <h3 style="
-        font-family: sans-serif;
-        font-weight: normal;
-        text-align: center;">
+      <h3>
         Graphic Designer: Leanna Britt
       </h3>
       <br></br>
     </header>
     <nav id="navBar">
+      <section><a href="index.html">Home</a></section>
       <section><a href="about.html">About</a></section>
       <section><a href="gallery.html">Gallery</a></section>
-      <section><a href="index.html">Contact</a></section>
+      <section><a href="contact.html">Contact</a></section>
     </nav>
     <p></p>
-    <div style="text-align: center">
-      <img
-        style="
-          border-radius: 50%;
-          width: 500px;
-          height: 250px;"
-        src="./images/wind.png"
-        alt="pocahontas drawing"
-      />
-    </div>
+    <main>
+      <div style="text-align: center">
+        <img
+          src="./images/wind.png"
+          alt="pocahontas drawing"
+          />
+      </div>
+      <div id="quote">
+        <p>
+          "A heart without dreams is like a bird without feathers"
+        </p>
+        <p>
+          -Suzy Kassem
+        </p>
+      </div>
+    </main>
     <p>
 
     </p>
+    <footer>
+      <section><a href="index.html">Home</a></section>
+      <section><a href="about.html">About</a></section>
+      <section><a href="gallery.html">Gallery</a></section>
+      <section><a href="contact.html">Contact</a></section>
+    </footer>
   </body>
 </html>
