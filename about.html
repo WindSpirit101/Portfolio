@@ -5,17 +5,27 @@
     <style>
       header{
         background-image: url(./images/orange-clouds.jpg);
-        background-position: 50% 55%;
+        background-position: 50% 60%;
         background-repeat: no-repeat;
-        background-size: auto 700px;
+        background-size: auto 800px;
         color: white;
+      }
+      h1{
+        font-family: cursive, snell roundhan;
+        font-size: 45px;
+        text-align: center;
+        text-shadow: black 1px 1px;
+      }
+      h3{
+        font-family: sans-serif;
+        font-weight: normal;
+        text-align: center;
       }
       #navBar{
         background-color: #95ceee;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 5px;
       }
       section{
         font-family: sans-serif;
@@ -25,6 +35,10 @@
       #navBar section{
         flex: 1;
         padding: 20px;
+      }
+      #navBar section a{
+        color: #0551a3;
+        text-decoration: none;
       }
       #navBar section:hover{
         background: linear-gradient(to left, #eea88d, #eddf9d, white);
@@ -45,6 +59,10 @@
       }
       #me{
         grid-area: sidenav;
+        transition: transform;
+      }
+      #me:hover{
+        transform: scale(1.5);
       }
       #adobe ul{
         font-family: sans-serif;
@@ -74,8 +92,6 @@
         grid-auto-rows: minmax(50px, auto);
         gap: 20px 10px;
         grid-template-areas:
-          "header header header"
-          "nav nav nav"
           "sidenav content content"
           "sidenav content1 content2"
           "footer footer footer";
@@ -85,7 +101,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 5px;
       }
       footer section{
         flex: 1;
@@ -95,8 +110,27 @@
         background: linear-gradient(to left, #eea88d, #eddf9d, white);
       }
       @media screen and (max-width: 480px){
+        header{
+          background-position: 48% 70%;
+          background-size: auto 300px
+        }
         #navBar section{
+          font-size: 13px;
           padding: 10px;
+        }
+        main div{
+          font-size: 13px;
+        }
+        h1{
+          font-size: 40px;
+        }
+        h3{
+          font-size: 16px;
+        }
+        div img{
+          border-radius: 50%;
+          height: 200px;
+          width: 140px;
         }
         footer section{
           padding: 10px;
@@ -107,16 +141,10 @@
   <body>
     <header>
       <br></br>
-      <h1 style="
-        font-family: cursive, snell roundhan;
-        font-size: 45px;
-        text-align: center;">
+      <h1>
         Wind Spirit
       </h1>
-      <h3 style="
-        font-family: sans-serif;
-        font-weight: normal;
-        text-align: center;">
+      <h3>
         Graphic Designer: Leanna Britt
       </h3>
       <br></br>
@@ -136,7 +164,7 @@
       </div>
       <div id="about">
         <p>
-          My name is Leanna, and I am a graphic designer.
+          My name is Leanna, and I am aspiring to be a graphic designer.
           I am currently still enrolled in college for my degree,
           but I am trained in most adobe applications,
           as listed below, and I am a capable web coder.

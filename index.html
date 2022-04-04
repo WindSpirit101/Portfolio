@@ -7,24 +7,26 @@
         background-image: url(./images/girl-in-clouds.jpg);
         background-position: 50% 80%;
         background-repeat: no-repeat;
-        background-size: auto 670px;
+        background-size: auto 800px;
       }
       h1{
+        color: white;
         font-family: cursive, snell roundhan;
         font-size: 50px;
         text-align: center;
+        text-shadow: black 1px 1px;
       }
       h3{
+        color: white;
         font-family: sans-serif;
         font-weight: normal;
-        text-align: center;"
+        text-align: center;
       }
       #navBar{
         background-color: #95ceee;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 5px;
       }
       section{
         font-family: sans-serif;
@@ -35,27 +37,17 @@
         flex: 1;
         padding: 20px;
       }
+      #navBar section a{
+        color: #0551a3;
+        text-decoration: none;
+      }
       #navBar section:hover{
         background: linear-gradient(to left, #eea88d, #eddf9d, white);
       }
       main div img{
         border-radius: 50%;
-        width: 500px;
-        height: 250px;
-      }
-      footer{
-        background-color: #95ceee;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: 5px;
-      }
-      footer section{
-        flex: 1;
-        padding: 20px;
-      }
-      footer section:hover{
-        background: linear-gradient(to left, #eea88d, #eddf9d, white);
+        width: 400px;
+        height: 200px;
       }
       main{
         font-family: sans-serif;
@@ -63,9 +55,13 @@
         text-align: center;
       }
       @media screen and (max-width: 480px){
+        header{
+          background-position: 48% 70%;
+          background-size: auto 300px
+        }
         main div img{
-          width: 300px;
-          height: 150px;
+          width: 250px;
+          height: 130px;
         }
         main div p{
           font-size: 13px;
@@ -120,15 +116,16 @@
           -Suzy Kassem
         </p>
       </div>
+      <div id="mySaying">
+        <p>
+          Without a dream, there is no reason for your life. Dreams help
+          you discover your path to life, and they are a place where your mind
+          can roam freely. 
+        </p>
+      </div>
     </main>
     <p>
 
     </p>
-    <footer>
-      <section><a href="index.html">Home</a></section>
-      <section><a href="about.html">About</a></section>
-      <section><a href="gallery.html">Gallery</a></section>
-      <section><a href="contact.html">Contact</a></section>
-    </footer>
   </body>
 </html>

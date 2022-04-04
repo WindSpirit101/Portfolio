@@ -7,15 +7,25 @@
         background-image: url(./images/dandelion-kid.jpg);
         background-position: 50% 67%;
         background-repeat: no-repeat;
-        background-size: auto 600px;
+        background-size: auto 800px;
         color: white;
+      }
+      h1{
+        font-family: cursive, snell roundhan;
+        font-size: 45px;
+        text-align: center;
+        text-shadow: black 1px 1px;
+      }
+      h3{
+        font-family: sans-serif;
+        font-weight: normal;
+        text-align: center;
       }
       #navBar{
         background-color: #95ceee;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 5px;
       }
       section{
         font-family: sans-serif;
@@ -26,28 +36,20 @@
         flex: 1;
         padding: 20px;
       }
+      #navBar section a{
+        color: #0551a3;
+        text-decoration: none;
+      }
       #navBar section:hover{
         background: linear-gradient(to left, #eea88d, #eddf9d, white);
       }
-      footer{
-        background-color: #95ceee;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: 5px;
-      }
-      footer section{
-        flex: 1;
-        padding: 20px;
-      }
-      footer section:hover{
-        background: linear-gradient(to left, #eea88d, #eddf9d, white);
-      }
       @media screen and (max-width: 480px){
-        #navBar section{
-          padding: 10px;
+        header{
+          background-position: 48% 70%;
+          background-size: auto 300px;
         }
-        footer section{
+        #navBar section{
+          font-size: 13px;
           padding: 10px;
         }
       }
@@ -56,16 +58,10 @@
   <body>
     <header>
       <br></br>
-      <h1 style="
-        font-family: cursive, snell roundhan;
-        font-size: 45px;
-        text-align: center;">
+      <h1>
         Wind Spirit
       </h1>
-      <h3 style="
-        font-family: sans-serif;
-        font-weight: normal;
-        text-align: center;">
+      <h3>
         Graphic Designer: Leanna Britt
       </h3>
       <br></br>
@@ -79,12 +75,6 @@
     <br></br>
     <p>
     </p>
-    <footer>
-      <section><a href="index.html">Home</a></section>
-      <section><a href="about.html">About</a></section>
-      <section><a href="gallery.html">Gallery</a></section>
-      <section><a href="contact.html">Contact</a></section>
-    </footer>
 
 
   </body>

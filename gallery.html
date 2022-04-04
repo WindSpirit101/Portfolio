@@ -5,15 +5,16 @@
     <style>
       header{
         background-image: url(./images/dandelion-field.jpg);
-        background-position: 50% 50%;
+        background-position: 55% 50%;
         background-repeat: no-repeat;
-        background-size: auto 700px;
+        background-size: auto 800px;
         color: black;
       }
       h1{
         font-family: cursive, snell roundhan;
         font-size: 50px;
         text-align: center;
+        text-shadow: white 1px 1px;
       }
       h3{
         font-family: sans-serif;
@@ -25,7 +26,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 5px;
       }
       section{
         font-family: sans-serif;
@@ -36,52 +36,80 @@
         flex: 1;
         padding: 20px;
       }
+      #navBar section a{
+        color: #0551a3;
+        text-decoration: none;
+      }
       #navBar section:hover{
         background: linear-gradient(to left, #eea88d, #eddf9d, white);
       }
       #PS{
-        background: #95ceee;
-        text-align:center;
+        text-align: center;
         font-family: cursive, snell roundhan;
+        font-size: 23px;
         font-weight: normal;
+        grid-area: content;
       }
       main{
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
+        position: relative;
       }
       main div{
-        padding: 3px;
-        margin: 3px;
+        height: 150px;
+        width: 150px;
       }
-      footer{
-        background-color: #95ceee;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: 5px;
+      .scroll nth child (even){
+        grid-area: content1;
       }
-      footer section{
-        flex: 1;
-        padding: 20px;
+      .scroll nth child(odd){
+        grid-area: content2;
       }
-      footer section:hover{
-        background: linear-gradient(to left, #eea88d, #eddf9d, white);
+      .scroll{
+        justify-content: center;
+        overflow-y: auto;
+        overflow-x: scroll;
+        scroll-direction: vertical;
+        white-space: nowrap;
+      }
+      .scroll{
+        transition-property: transform;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+        transition-delay: 1s;
+        transform-origin: top;
+      }
+      .scroll:hover{
+        transform: scale(1.5);
+        transform-origin: top;
+      }
+      #webBanner{
+        align-self: auto;
+        height: 300px;
+        position: sticky;
+        left: 1rem;
+        grid-area: sidenav;
+      }
+      main{
+        display: grid;
+        grid-template-columns: 1fr 250px 1fr; /* repeat (#, repeating values)*/
+        grid-auto-rows: minmax(50px, auto);
+        gap: 20px 10px;
+        grid-template-areas:
+          "sidenav content content"
+          "sidenav content1 content2"
+          "sidenav content1 content2";
       }
       @media screen and (min-width: 800px) {
         main{
-          display: flex;
-          lex-wrap: wrap;
-          flex-direction: row;
           justify-content: center;
         }
       }
         @media screen and (max-width: 480px) {
+          header{
+            background-position: 48% 70%;
+            background-size: auto 300px
+          }
           main{
-            display: flex;
-            lex-wrap: wrap;
-            flex-direction: row;
             justify-content: center;
           }
           main div p{
@@ -97,8 +125,8 @@
             font-size: 13px;
             padding: 10px;
           }
-          footer section{
-            padding: 10px;
+          #webBanner{
+            height: 150px;
           }
         }
 
@@ -122,113 +150,100 @@
       <section><a href="contact.html">Contact</a></section>
     </nav>
     <br></br>
-    <h3 id="PS">
-      Scroll for a peek of my designs!
-    </h3>
     <main>
+      <h3 id="PS">
+        Scroll for a peek of my designs!
+      </h3>
       <div id="webBanner">
         <img
-        style="height: 400px;"
         src="./images/WebBanner_SmartObj.jpg"
         alt="WebBanner"/>
       </div>
-      <div id="wind-spirit">
-        <video controls style="height: 200px;">
+      <div class="scroll">
+        <video
+          controls style="height: 200px;">
           <source src="./videos/Wind_Spirit_Fin2.mp4"
             type="video/mp4">
         </video>
       </div>
-      <div id="d.e">
+      <div class="scroll">
         <img
-          style="height: 200px;"
           src="./images/double_exposure_2.jpg"
           alt="double exposure"/>
         </div>
-        <div id="s.a.t">
+        <div class="scroll">
           <img
-          style="height: 200px;"
           src="./images/Artboard 1.jpg"
           alt="shes all that movie poster"/>
         </div>
-        <div id="sweet.escape">
+        <div class="scroll">
           <img
-            style="height: 200px;"
             src="./images/sweet_escape.jpg"
             alt="sweet escape"/>
         </div>
-        <div id="smoothe.design">
+        <div class="scroll">
           <img
-            style="height: 200px;"
             src="./images/smoothies.jpg"
             alt="smoothie design"/>
         </div>
-        <div id="insta">
+        <div class="scroll">
           <img
-            style="height: 200px;"
             src="./images/Insta-Grid.jpg"
             alt="instagram"/>
         </div>
-        <div id="smoke">
+        <div class="scroll">
           <img
-            style="height: 200px;"
             src="./images/lady_smoking.jpg"
             alt="lady smoking"/>
         </div>
-        <div id="parallax">
-          <video controls style="height: 200px;">
+        <div class="scroll">
+          <video
+            controls>
             <source src="./videos/3D_parallax_LB 2.mp4"
               type="video/mp4">
           </video>
         </div>
-        <div id="boat">
-          <video controls style="height: 200px;">
+        <div class="scroll">
+          <video
+            controls>
             <source src="./videos/boat_motion_LB.mp4"
               type="video/mp4">
           </video>
         </div>
-        <div id="f.c">
+        <div class="scroll">
           <img
-            style="height: 200px;"
             src="./images/furniture-catalog.png"
             alt="furniture catalog"/>
         </div>
-        <div id="f.c.pg2">
+        <div class="scroll">
           <img
-            style="height: 200px;"
             src="./images/furniture-cat.pg2.png"
             alt="furniture catalog page 2"/>
         </div>
-        <div id="f.c.pg3">
+        <div class="scroll">
           <img
-            style="height: 200px;"
             src="./images/furniture-cat.pg3.png"
             alt="furniture catalog page 3"/>
         </div>
-        <div id="wishtree">
+        <div class="scroll">
           <img
-            style="height: 200px;"
             src="./images/Wishtree.jpg"
             alt="wishtree book cover designs"/>
         </div>
-        <div id="lion.dance">
-          <video controls style="height: 200px;">
+        <div class="scroll">
+          <video
+            controls>
             <source src="./videos/Comp 1_1.mp4"
               type="video/mp4">
           </video>
         </div>
-        <div id="load.circle">
-          <video controls style="height: 200px;">
+        <div class="scroll">
+          <video
+            controls>
             <source src="./videos/loading_circle.mp4"
               type="video/mp4">
           </video>
         </div>
       </main>
-      <footer>
-        <section><a href="index.html">Home</a></section>
-        <section><a href="about.html">About</a></section>
-        <section><a href="gallery.html">Gallery</a></section>
-        <section><a href="contact.html">Contact</a></section>
-      </footer>
-
   </body>
 </html>
