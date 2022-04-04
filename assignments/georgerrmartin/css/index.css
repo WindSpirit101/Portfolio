@@ -4,4 +4,16 @@ body{
 #grid{
   display: grid;
   grid-template-columns: 1fr 333px 334px 333px 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas:
+    ". header header header ."
+    ". nav nav nav ."
+    ". banner banner banner ."
+    ". card1 card1 card1 ."
+    ". sidenav blog blog ."
+    ". footer footer footer ."
+    ". bottom bottom bottom .";
+}
+@media query {
+
 }
