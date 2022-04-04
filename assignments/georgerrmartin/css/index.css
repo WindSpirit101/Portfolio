@@ -1,0 +1,7 @@
+body{
+  background-color: gainsboro;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 1fr 333px 334px 333px 1fr;
+}
