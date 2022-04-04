@@ -14,6 +14,17 @@ body{
     ". footer footer footer ."
     ". bottom bottom bottom .";
 }
-@media query {
-
+@media screen and (max-width: 1000px){
+  #grid{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "banner"
+      "card1"
+      "blog"
+      "sidenav"
+      "footer"
+      "bottom";
+  }
 }
