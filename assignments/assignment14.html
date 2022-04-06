@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Examples Index</title>
+    <style>
+      #c1, #c2, #s3{
+        display: block;
+        margin-bottom: 12px;
+      }
+      #c1 input{
+        background-color: papayaWhip;
+        border: 0;
+        border-radius: 4px;
+        padding: 10px;
+      }
+      #c2 input{
+        background-color: seaShell;
+        border: 0;
+        border-radius: 4px;
+        padding: 10px;
+      }
+      #s3 input{
+        background-color: mintCream;
+        border: 0;
+        border-radius: 4px;
+        padding: 10px;
+      }
+      #button input[type=later]{
+        background-color: ghostwhite;
+        border: 3px solid palevioletred;
+        border-radius: 6px;
+        padding: 10px;
+        text-align: center;
+      }
+      #button input[type=submit]{
+        background-color: ghostwhite;
+        border: 3px solid palevioletred;
+        border-radius: 6px;
+        padding: 10px;
+        text-align: center;
+      }
+      #button input:focus-visible{
+        outline: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <h2>Name the first thing that comes to mind</h2>
+        <div id="c1">
+          <label for="coffee">Coffee</label>
+          <input type="text" id="coffee">
+        </div>
+        <div id="c2">
+          <label for="clothes">Clothing</label>
+          <input type="text" id="clothes">
+        </div>
+        <div id="s3">
+          <label for="shoes">Shoes</label>
+          <input type="text" id="shoes">
+        </div>
+        <h2>What is your favorite genre of music?</h2>
+        <div>
+          <input type="radio" id="pop" name="program" value="popgenre">
+          <label for="pop">Pop</label>
+        </div>
+        <div>
+          <input type="radio" id="rock" name="program" value="rockgenre">
+          <label for="rock">Rock</label>
+        </div>
+        <div>
+          <input type="radio" id="country" name="program" value="countrygenre">
+          <label for="country">Country</label>
+        </div>
+        <div>
+          <input type="radio" id="electronic" name="program" value="electricgenre">
+          <label for="electronic">Electronic</label>
+        </div>
+        <br>
+        <div id="button">
+          <input type="later" value="Save and Come Back">
+          <input type="submit" value="Save and Submit Now">
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
