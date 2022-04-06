@@ -114,7 +114,14 @@ footer{
   grid-area: footer;
   text-align: center;
 }
-@media screen and (max-width: 1000px){
+#bottom{
+  background-image: url("../footer-bg.jpeg");
+  background-position: center top;
+  background-repeat: no repeat;
+  height: 120px;
+  grid-area: bottom;
+}
+@media screen and (max-width: 600px){
   #grid{
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -129,4 +136,10 @@ footer{
       "footer"
       "bottom";
   }
+}
+#navBar div{
+  flex-direction: column;
+}
+#card1, #card2, #card3{
+  flex-direction: column;
 }
