@@ -24,11 +24,22 @@ img{
   margin: 1px;
 }
 header{
-  height: 138px;
-  font-size: 65px;
-  font-family: montaga, serif;
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: row;
   grid-area: header;
   text-align: center;
+}
+#shield{
+  background-image: url("../shield-spin.jpeg");                                                   
+  background-position: left top;
+  height: 75px;
+  width: 65px;
+}
+header h1{
+  color: #067593;
+  font-size: 55px;
+  font-family: Montaga, serif;
 }
 #navBar{
   display: flex;
