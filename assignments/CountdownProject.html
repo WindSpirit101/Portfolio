@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Examples Index</title>
+    <link rel="preconnect" href="https://fonts.googleopis.com">
+    <link rel="preconnect" href="https://fonts.gsataic.com" crossorigin>
+    <link href="https://fonts.googleopis.com/css2?family=Grape+Nuts&display=swop" rel="stylesheet">
+    <style>
+      body{
+        margin: 0;
+        background-image: url(../images/better-days-neon-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 900px;
+      }
+      header{
+        align-items: center;
+        color: cyan;
+        display: flex;
+        font-family: 'grape nuts', cursive;
+        font-size: 23px;
+        justify-content: center;
+        padding: 19px;
+      }
+      header{
+        animation: flicker 5s infinite;
+      }
+      @keyframes flicker{
+          0%, 18%, 22%, 25%, 53%, 57%, 76%, 78%, 100%{
+            text-shadow:
+              0 0 4px #fff,
+              0 0 11px #fff,
+              0 0 19px #fff,
+              0 0 40px #0fa,
+              0 0 80px #0fa,
+              0 0 90px #0fa,
+              0 0 100px #0fa,
+              0 0 150px #0fa;
+          }
+          20%, 24%, 55%, 77%{
+            text-shadow: none;
+          }
+      }
+      #hero{
+        align-items: center;
+        color: cyan;
+        display: flex;
+        flex-direction: row;
+        font-family: 'grape nuts', cursive;
+        height: 460px;
+        justify-content: center;
+        padding: 35px;
+      }
+      #countdown > div{
+        display: inline-block;
+        width: 150px;
+      }
+      footer{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Countdown to Better Days</h1>
+    </header>
+    <div id="hero">
+      <h1 id="countdown">Graduation Date Loading...</h1>
+    </div>
+    <script type="text/javascript">
+      let deadline = new Date('July 22, 2022 16:30:00');
+
+      function setCountdown(){
+        let now = new Date();
+
+        let timeLeft = deadline.getTime() - now.getTime();
+
+        let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor(
+          (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds = Math.floor(
+           (timeLeft % (1000 * 60)) / 1000
+        );
+
+        document.getElementById('countdown').innerHTML =
+          ' <div> ' + days + ' <div>Days</div></div> ' +
+          ' <div> ' + hours + ' <div>Hours</div></div> ' +
+          ' <div> ' + minutes + ' <div>Minutes</div></div> ' +
+          ' <div> ' + seconds + ' <div>Seconds</div></div> ';
+
+      }
+      setInterval(setCountdown, 1000);
+    </script>
+    <footer>
+      <img style="border-radius: 100%; height: 70px;" src="../images/old.logo2.jpg" alt="lm designs logo"/>
+    </footer>
+  </body>
+</html>
