@@ -11,6 +11,10 @@ function showSlide(){
 
   let slides = [slide1, slide2, slide3, slide4, slide5, slide6];
 
+  if (currentSlideIndex >= slides.length){
+    currentSlideIndex = 0;
+  }
+
   for (let i = 0; i < slides.length; i++) {
     let loopSlide = slides[i];
     if (i != currentSlideIndex){
