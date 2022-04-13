@@ -18,10 +18,10 @@
         align-items: center;
       }
       #popupBackground{
-        background-color: cornsilk;
-        height: 100%;
-        width: 100%;
-        position: absolute;
+        background-image: url(./images/space.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
         z-index: 0;
       }
       #popupContainer.popupOpen{
@@ -37,23 +37,33 @@
         text-align: center;
         z-index: 1;
       }
+      #popup .closePopup{
+        margin-top: 36px;
+      }
     </style>
   </head>
   <body>
     <h1>Hello Humans!</h1>
     <div class="popupTrigger">
-      Click on me to open a popup!
+      Click on 👽 to open a popup!
     </div>
     <div id="popupContainer" class="popupOpen">
       <div id="popupBackground"></div>
       <div id="popup">
-        <div>Congrats! You've opened a popup!</div>
+        <div>Human! You've opened a popup!</div>
+        <div class="closePopup">Close</div>
       </div>
     </div>
     <script type="text/javascript">
       $('.popupTrigger').click(
         function(){
-          $('#popupContainer').addClass('.popupOpen');
+          $('#popupContainer').addClass('popupOpen');
+        }
+      );
+
+      $('.closePopup').click(
+        function(){
+          $('#popupContainer').removeClass('popupOpen');
         }
       );
     </script>
