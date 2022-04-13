@@ -18,18 +18,18 @@
         align-items: center;
       }
       #popupBackground{
-        background-image: url(./images/space.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: auto;
+        background-image: url(../images/space.jpg);
+        position: absolute;
+        height: 100%;
+        width: 100%;
         z-index: 0;
       }
       #popupContainer.popupOpen{
         display: flex;
       }
       #popup{
-        background-color: floralwhite;
-        border: 3px solid darkslategrey;
+        background-color: lavenderblush;
+        border: 3px solid mediumvioletred;
         border-radius: 24px;
         padding: 36px;
         position: relative;
@@ -50,7 +50,9 @@
     <div id="popupContainer" class="popupOpen">
       <div id="popupBackground"></div>
       <div id="popup">
-        <div>Human! You've opened a popup!</div>
+        <div>
+          <h3>Human! You've opened a popup!</h3>
+        </div>
         <div class="closePopup">Close</div>
       </div>
     </div>
