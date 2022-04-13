@@ -1,16 +1,21 @@
 #slideshow{
-  height: 400px;
+  align-items: center;
+  height: 500px;
+  width: 500px;
   text-align: center;
 }
 .slideshowImg{
+  align-items: center;
+  justify-content: center;
   width: 500px;
 }
 input[type=button]{
   align-content: center;
+  border: none;
   background-color: orangered;
   color: #fff;
-  font-size: 26px;
-  padding: 20px;
+  font-size: 17px;
+  padding: 15px;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;

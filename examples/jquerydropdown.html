@@ -7,6 +7,11 @@
       *{
         box-sizing: border-box;
       }
+      body{
+        background-image: url(../images/seaweed.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
       nav,
       .navLink{
         background-color: darkslategrey;
@@ -59,6 +64,16 @@
           <div>Events</div>
         </div>
       </div>
+        <div class="navLink clickDropdown">
+          <div class="mainLink">Projects</div>
+          <div class="dropdown">
+            <div>Photoshop</div>
+            <div>Aftereffects</div>
+            <div>Illustrator</div>
+            <div>Programming</div>
+          </div>
+        </div>
+      </div>
       <div class="navLink">
         <div class="mainLink">Other Link</div>
       </div>
@@ -71,6 +86,16 @@
         },
         function(){
           $(this).removeClass('dropdownOpen');
+        }
+      );
+
+      $('.clickDropdown').click(
+        function(){
+          if($(this).hasClass('dropdownOpen')){
+            $(this).removeClass('dropdownOpen');
+          } else{
+            $(this).addClass('dropdownOpen');
+          }
         }
       );
     </script>
