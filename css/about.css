@@ -1,0 +1,118 @@
+header{
+  background-image: url(./images/orange-clouds.jpg);
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  background-size: auto 800px;
+  color: white;
+  padding: 36px;
+}
+h1{
+  font-family: cursive, snell roundhan;
+  font-size: 45px;
+  text-align: center;
+  text-shadow: black 1px 1px;
+}
+h3{
+  font-family: sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+#navBar{
+  background-color: #95ceee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+section{
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+#navBar section{
+  flex: 1;
+  padding: 20px;
+}
+#navBar section a{
+  color: #0551a3;
+  text-decoration: none;
+}
+#navBar section:hover{
+  background: linear-gradient(to left, #eea88d, #eddf9d, white);
+}
+#about p{
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 20px 20px;
+  text-align: center;
+}
+#about{
+  grid-area: content;
+}
+div img{
+  border-radius: 50%;
+  height: 300px;
+  width: 220px;
+}
+#me{
+  grid-area: sidenav;
+  padding: 25px;
+  transition: transform;
+}
+#me:hover{
+  transform: scale(1.5);
+}
+#adobe ul{
+  font-family: sans-serif;
+  font-weight: lighter;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#adobe{
+  grid-area: content2;
+}
+#education ul{
+  font-family: sans-serif;
+  font-weight: lighter;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#education{
+  grid-area: content1;
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr 250px 1fr; /* repeat (#, repeating values)*/
+  grid-auto-rows: minmax(50px, auto);
+  gap: 20px 10px;
+  grid-template-areas:
+    "sidenav content content"
+    "sidenav content1 content2";
+}
+@media screen and (max-width: 480px){
+  header{
+    background-position: 48% 70%;
+    background-size: auto 300px
+  }
+  #navBar section{
+    font-size: 13px;
+    padding: 10px;
+  }
+  main div{
+    font-size: 13px;
+  }
+  h1{
+    font-size: 40px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  div img{
+    border-radius: 50%;
+    height: 200px;
+    width: 140px;
+  }
+}
