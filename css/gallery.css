@@ -46,13 +46,9 @@ section{
   font-weight: normal;
   grid-area: content;
 }
-main #scrollContainer div{
-  height: 150px;
-  width: 150px;
-}
 #scrollContainer{
   grid-area: content1;
-  height: 300px;
+  height: 600px;
   width: 600px;
   margin-bottom: 60px;
   overflow-y: scroll;
@@ -60,7 +56,14 @@ main #scrollContainer div{
 .scroll{
   display: inline-block;
   margin: 12px;
-  padding: 60px;
+  padding: 25px;
+}
+.scroll img{
+  width: 100%;
+}
+.scroll video{
+  height: 100%;
+  width: 100%;
 }
 #webBanner{
   align-self: auto;
@@ -68,7 +71,7 @@ main #scrollContainer div{
   position: sticky;
   left: 1rem;
   grid-area: sidenav;
-  padding: 25px;
+  padding: 35px;
 }
 main{
   display: grid;
@@ -76,9 +79,9 @@ main{
   grid-auto-rows: minmax(50px, auto);
   gap: 20px 10px;
   grid-template-areas:
-    "sidenav content content"
-    "sidenav content1 content1"
-    "sidenav content1 content1";
+    "sidenav content"
+    "sidenav content1"
+    "sidenav content1";
 }
 @media screen and (min-width: 800px) {
   main{
