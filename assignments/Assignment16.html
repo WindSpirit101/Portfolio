@@ -3,22 +3,102 @@
   <head>
     <title>Examples Index</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <style>
       body{
         align-items: center;
-        background-image: url(../images/flower.eye.jpg);
+        background-image: url(../images/tulips.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
-        color: floralwhite;
+        color: white;
+        font-family: sans-serif;
+        font-weight: lighter;
+        text-shadow:  1px 1px pink;
       }
-      h1, h3{
+      h1{
+        font-family: 'Satisfy', cursive;
+        font-size: 55px;
+        text-shadow: 2px 2px pink;
+      }
+      img{
+        height: 150px;
+        transform: scaleX(-1);
+      }
+      #popupContainer{
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
         justify-content: center;
         align-items: center;
+      }
+      #popupBackground{
+        background-color: rgba(255, 0, 0, 0.13);
+        background-size: contain;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+      }
+      #popupContainer.popupOpen{
+        display: flex;
+      }
+      #popup{
+        background-color: white;
+        border: 3px solid mediumvioletred;
+        border-radius: 24px;
+        color: mediumvioletred;
+        padding: 25px;
+        position: relative;
+        min-width: 400px;
+        text-align: center;
+        z-index: 1;
+      }
+      #popup .closePopup{
+        margin-top: 36px;
       }
     </style>
   </head>
   <body>
-    <h1>Spring is in Bloom</h1>
-    <h3>Which flower best describes you?</h3>
+    <center>
+      <h1>Spring is in Bloom</h1>
+      <div class="popupTrigger">
+        <h2>Which flower best describes you?</h2>
+      </div>
+    </center>
+    <div id="popupContainer" class="popupOpen">
+      <div id="popupBackground"></div>
+      <div id="popup">
+        <div>
+          <center>
+            <h3>You are like a rose!</h3>
+            <div>
+              <img src="../images/rose.jpg" alt="rose">
+            </div>
+            <h4>You are romantic, beautiful and courageous.</h4>
+          </center>
+        </div>
+        <center>
+          <div class="closePopup">Close</div>
+        </center>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $('.popupTrigger').click(
+        function(){
+          $('#popupContainer').addClass('popupOpen');
+        }
+      );
+
+      $('.closePopup').click(
+        function(){
+          $('#popupContainer').removeClass('popupOpen');
+        }
+      );
+    </script>
   </body>
 </html>
