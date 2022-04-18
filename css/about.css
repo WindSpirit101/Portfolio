@@ -92,6 +92,24 @@ main{
     "sidenav content content"
     "sidenav content1 content2";
 }
+footer{
+  background-color: #c3e2f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+h4{
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+}
+footer ul li{
+  font-size: 12px;
+}
+#contact{
+  list-style-type: none;
+}
 @media screen and (max-width: 480px){
   header{
     background-position: 48% 70%;
@@ -114,5 +132,11 @@ main{
     border-radius: 50%;
     height: 200px;
     width: 140px;
+  }
+  footer ul li{
+    font-size: 9px;
+  }
+  h4{
+    font-size: 13px;
   }
 }

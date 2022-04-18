@@ -79,9 +79,27 @@ main{
   grid-auto-rows: minmax(50px, auto);
   gap: 20px 10px;
   grid-template-areas:
-    "sidenav content"
-    "sidenav content1"
-    "sidenav content1";
+    "sidenav content content"
+    "sidenav content1 content1"
+    "sidenav content1 content1";
+}
+footer{
+  background-color: #c3e2f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+h4{
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+}
+footer ul li{
+  font-size: 12px;
+}
+#contact{
+  list-style-type: none;
 }
 @media screen and (min-width: 800px) {
   main{
@@ -110,6 +128,12 @@ main{
       padding: 10px;
     }
     #webBanner{
-      height: 150px;
+      height: 90px;
+    }
+    footer ul li{
+      font-size: 9px;
+    }
+    h4{
+      font-size: 13px;
     }
   }
