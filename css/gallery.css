@@ -7,8 +7,8 @@ header{
   padding: 36px;
 }
 h1{
-  font-family: cursive, snell roundhan;
-  font-size: 50px;
+  font-family: 'MonteCarlo', cursive;
+  font-size: 55px;
   text-align: center;
   text-shadow: white 1px 1px;
 }
@@ -41,15 +41,15 @@ section{
 }
 #PS{
   text-align: center;
-  font-family: cursive, snell roundhan;
-  font-size: 23px;
+  font-family: 'MonteCarlo', cursive;
+  font-size: 30px;
   font-weight: normal;
   grid-area: content;
 }
 #scrollContainer{
   grid-area: content1;
-  height: 600px;
-  width: 600px;
+  height: 500px;
+  width: 800px;
   margin-bottom: 60px;
   overflow-y: scroll;
 }
@@ -59,15 +59,16 @@ section{
   padding: 25px;
 }
 .scroll img{
+  height: 60%;
   width: 100%;
 }
 .scroll video{
-  height: 100%;
+  height: 60%;
   width: 100%;
 }
 #webBanner{
   align-self: auto;
-  height: 300px;
+  height: 330px;
   position: sticky;
   left: 1rem;
   grid-area: sidenav;
@@ -86,6 +87,7 @@ main{
 footer{
   background-color: #c3e2f2;
   display: flex;
+  font-family: sans-serif;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -117,6 +119,16 @@ footer ul li{
     main div p{
       font-size: 13px;
     }
+    main{
+      display: grid;
+      grid-template-columns: 1fr 250px 1fr; /* repeat (#, repeating values)*/
+      grid-auto-rows: minmax(50px, auto);
+      gap: 20px 10px;
+      grid-template-areas:
+        "sidenav content"
+        "sidenav content1"
+        "sidenav content1";
+    }
     h1{
       font-size: 40px;
     }
@@ -127,8 +139,16 @@ footer ul li{
       font-size: 13px;
       padding: 10px;
     }
+    #PS{
+      font-size: 20px;
+    }
     #webBanner{
-      height: 90px;
+      height: 70px;
+    }
+    #scrollContainer{
+      height: 150px;
+      width: 200px;
+      margin-bottom: 20px;
     }
     footer ul li{
       font-size: 9px;

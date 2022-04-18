@@ -1,5 +1,5 @@
 header{
-  background-image: url(./images/orange-clouds.jpg);
+  background-image: url(../images/orange-clouds.jpg);
   background-position: 50% 60%;
   background-repeat: no-repeat;
   background-size: auto 800px;
@@ -7,8 +7,8 @@ header{
   padding: 36px;
 }
 h1{
-  font-family: cursive, snell roundhan;
-  font-size: 45px;
+  font-family: 'MonteCarlo', cursive;
+  font-size: 55px;
   text-align: center;
   text-shadow: black 1px 1px;
 }
@@ -95,6 +95,7 @@ main{
 footer{
   background-color: #c3e2f2;
   display: flex;
+  font-family: sans-serif;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -118,6 +119,17 @@ footer ul li{
   #navBar section{
     font-size: 13px;
     padding: 10px;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr; /* repeat (#, repeating values)*/
+    grid-auto-rows: minmax(50px, auto);
+    gap: 20px 10px;
+    grid-template-areas:
+      "content content"
+      "sidenav content1"
+      "sidenav content2";
+    margin: 8px;
   }
   main div{
     font-size: 13px;
