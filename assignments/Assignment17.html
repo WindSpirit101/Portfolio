@@ -13,16 +13,30 @@
 
     <title>Hello, world!</title>
     <style>
+    body{
+      background-image: url(../images/redmoon-space.jpg);
+    }
       .row > div{
-        background-color: lightcoral;
+        background-color: #FFCC99;
         border: 1px solid mintcream;
+      }
+      h5{
+        color: white;
+        margin: 20px;
+      }
+      picture img{
+        height: 200px;
+        margin: 25px;
+      }
+      .dropdown{
+        margin: 20px;
       }
     </style>
   </head>
   <body>
     <div class="navbar navbar-expand-sm navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">WindSpirit</a>
+        <a class="navbar-brand" href="#">AlienzOnTheRise</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,9 +51,6 @@
               <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link active" href="#">About Me</a>
             </li>
             <li class="nav-item">
@@ -51,27 +62,69 @@
     </div>
     <div class="container-fluid bg-dark text-white text-center mb-2">
       <div class="col p-5">
-        <h1>Hello, world!</h1>
-        <p>Duces</p>
+        <h1>Earthlings!</h1>
+        <p>Greetings from Mars!</p>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-4">Column 1</div>
-        <div class="col-sm-6">Column 2
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-             nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="col-sm">Demands
+          <p>Live stock to feed our fellow alienz</p>
         </div>
-        <div class="col-sm">Column 3</div>
+        <div class="col-sm">Pleas
+          <p>Bunnies for the pets</p>
+        </div>
+        <div class="col-sm">Compensation
+          <p>Only enough to raise our own</p>
+        </div>
       </div>
       <div class="row">
-        <div class="col-md">Medium Column</div>
-        <div class="col-9">Column Width 9</div>
+        <div class="col-md">Pigs</div>
+        <div class="col-5">Cows</div>
+        <div class="col-2">Sheep</div>
+        <div class="col-3">Ponies</div>
       </div>
     </div>
-
+    <picture>
+      <img class=".img-*"
+          src="../images/bunny-white.jpg"
+          class="rounded-float-start"
+          alt="white bunny"/>
+      <img class=".img-*"
+          src="../images/bunny-brown.jpg"
+          class="rounded-start-end"
+          alt="bunny brown"/>
+      <img class=".img-*"
+          src="../images/blanc-hotot.png"
+          class="rounded-start-end"
+          alt="blanc de hotot"/>
+      <img class=".img-*"
+          src="../images/belgian-hare.png"
+          class="rounded-start-end"
+          alt="belgian hare"/>
+      <img class=".img-*"
+          src="../images/mini-lop.png"
+          class="rounded-start-end"
+          alt="mini lop"/>
+    </picture>
+    <ul class="list-group list-group-flush">
+      <h5>Types of Bunnies for the Pets</h5>
+      <li class="list-group-item">Mini Lop</li>
+      <li class="list-group-item">Blanc de Hotot</li>
+      <li class="list-group-item">Belgian Hare</li>
+      <li class="list-group-item">Polish Rabbit</li>
+      <li class="list-group-item">Dutch Rabbit</li>
+    </ul>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Failure to Meet Requests
+      </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Abduction</a></li>
+          <li><a class="dropdown-item" href="#">Probing</a></li>
+          <li><a class="dropdown-item" href="#">Memory Wipe</a></li>
+        </ul>
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
