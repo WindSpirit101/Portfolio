@@ -133,13 +133,13 @@ footer #contact{
     margin: 8px;
   }
   main div{
-    font-size: 13px;
+    font-size: 9px;
   }
   h1{
     font-size: 40px;
   }
   h3{
-    font-size: 16px;
+    font-size: 14px;
   }
   div img{
     border-radius: 50%;
@@ -150,6 +150,6 @@ footer #contact{
     font-size: 9px;
   }
   h4{
-    font-size: 13px;
+    font-size: 12px;
   }
 }
