@@ -49,14 +49,15 @@ section{
 #scrollContainer{
   grid-area: content1;
   height: 500px;
-  width: 800px;
+  width: 100%;
   margin-bottom: 60px;
   overflow-y: scroll;
 }
 .scroll{
   display: inline-block;
-  margin: 12px;
-  padding: 25px;
+  margin: 10px;
+  padding: 20px;
+  justify-content: center;
 }
 .scroll img{
   height: 60%;
@@ -68,11 +69,11 @@ section{
 }
 #webBanner{
   align-self: auto;
-  height: 330px;
-  position: sticky;
+  height: 100%;
   left: 1rem;
   grid-area: sidenav;
   padding: 35px;
+  width: 100%;
 }
 main{
   display: grid;
@@ -82,20 +83,27 @@ main{
   grid-template-areas:
     "sidenav content content"
     "sidenav content1 content1"
-    "sidenav content1 content1";
+    "sidenav content1 content1"
+    "footer footer footer";
 }
 footer{
   background-color: #c3e2f2;
   display: flex;
   font-family: sans-serif;
   flex-wrap: wrap;
+  grid-area: footer;
   justify-content: space-evenly;
+  justify-content: center;
+  text-align: center;
+}
+footer #contact{
+  flex: 1;
+  justify-content: center;
 }
 h4{
   font-family: sans-serif;
   font-size: 18px;
   font-weight: lighter;
-  text-align: center;
 }
 footer ul li{
   font-size: 12px;
@@ -109,6 +117,11 @@ footer ul li{
   }
 }
   @media screen and (max-width: 480px) {
+    body{
+      align-content: center;
+      justify-content: center;
+      margin: 15px;
+    }
     header{
       background-position: 48% 70%;
       background-size: auto 300px
@@ -125,9 +138,11 @@ footer ul li{
       grid-auto-rows: minmax(50px, auto);
       gap: 20px 10px;
       grid-template-areas:
-        "sidenav content"
-        "sidenav content1"
-        "sidenav content1";
+        "content"
+        "sidenav"
+        "content1"
+        "content1"
+        "footer";
     }
     h1{
       font-size: 40px;
@@ -142,12 +157,7 @@ footer ul li{
     #PS{
       font-size: 20px;
     }
-    #webBanner{
-      height: 70px;
-    }
     #scrollContainer{
-      height: 150px;
-      width: 200px;
       margin-bottom: 20px;
     }
     footer ul li{
