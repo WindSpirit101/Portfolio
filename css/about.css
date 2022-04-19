@@ -105,7 +105,8 @@ h4{
   font-weight: lighter;
   text-align: center;
 }
-footer ul li{
+footer #contact{
+  flex: 1;
   font-size: 12px;
 }
 #contact{
