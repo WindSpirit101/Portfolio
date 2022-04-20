@@ -103,6 +103,7 @@ footer{
   background-color: #c3e2f2;
   display: flex;
   flex-wrap: wrap;
+  grid-area: footer;
   justify-content: space-evenly;
 }
 h4{
@@ -175,6 +176,11 @@ textarea{
   color: black;
   font-size: 20px;
 }
+#yourMessage{
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+}
 #popup{
   background-color: lavenderblush;
   border: 3px solid #eea98d;
@@ -237,5 +243,28 @@ textarea{
   }
   h5{
     font-size: 9px;
+  }
+  textarea{
+    width: 180px;
+  }
+  #popup{
+    border-radius: 24px;
+    padding: 25px;
+    min-width: 100px;
+  }
+  #buttonContainer input[type=button]{
+    border-radius: 6px;
+    margin-right: 5px;
+    padding: 5px;
+  }
+  #buttonContainer input[type=submit]{
+    border-radius: 6px;
+    margin-right: 5px;
+    padding: 5px;
+  }
+  #buttonContainer input[type=reset]{
+    border-radius: 6px;
+    margin-right: 5px;
+    padding: 5px;
   }
 }

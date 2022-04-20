@@ -11,18 +11,6 @@ header{
   background-size: cover;
   color: black;
   padding: 36px;
-  --torn-shadow-offset-x: -2px;
-  --torn-shadow-offset-y: -2px;
-  --torn-shadow-background-color: rgba(0, 0, 0, 0.25);
-  --torn-background-color: #f15a2b;
-  --torn-left-width: 3px;
-  --torn-right-width: 3px;
-  --torn-left-clip-path: polygon(14% 0%, 17% 3%, 95% 5%, 34% 8%, 50% 10%, 28% 13%,
-    28% 15%, 28% 18%, 71% 20%, 1% 23%, 83% 25%, 76% 28%, 15% 30%, 85% 33%,
-    15% 35%, 88% 38%, 83% 40%, 78% 43%, 0% 45%, 22% 48%, calc(100% + 1px) 100%, calc(100% +1px) 0%);
-  --torn-right-clip-path: polygon(49% 0%, 19% 3%, 9% 5%, 25% 8%, 78% 10%, 38% 13%,
-    58% 15%, 88% 18%, 18% 20%, 98% 23%, 54% 25%, 69% 28%, 94% 30%, 5% 33%,
-    23% 35%, 28% 38%, 49% 93%, 78% 100%, -10% 100%, -10% 0%);
 }
 h1{
   font-family: 'MonteCarlo', cursive;
@@ -107,6 +95,7 @@ main{
 footer{
   background-color: #c3e2f2;
   display: flex;
+  grid-area: footer;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -179,6 +168,11 @@ textarea{
 #popup div h3{
   color: black;
   font-size: 20px;
+}
+#yourMessage{
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
 }
 #popup{
   background-color: lavenderblush;
@@ -253,5 +247,28 @@ textarea{
     }
     h5{
       font-size: 9px;
+    }
+    textarea{
+      width: 180px;
+    }
+    #popup{
+      border-radius: 24px;
+      padding: 25px;
+      min-width: 100px;
+    }
+    #buttonContainer input[type=button]{
+      border-radius: 6px;
+      margin-right: 5px;
+      padding: 5px;
+    }
+    #buttonContainer input[type=submit]{
+      border-radius: 6px;
+      margin-right: 5px;
+      padding: 5px;
+    }
+    #buttonContainer input[type=reset]{
+      border-radius: 6px;
+      margin-right: 5px;
+      padding: 5px;
     }
   }
