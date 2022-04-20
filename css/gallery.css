@@ -160,6 +160,7 @@ textarea{
 }
 #buttonContainer input:focus-visible{
   outline: 0;
+}
 #popupContainer{
   height: 100vh;
   width: 100vw;

@@ -128,6 +128,11 @@ footer #contact{
 #contact{
   list-style-type: none;
 }
+@media screen and (min-width: 800px) {
+  main{
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 480px){
   header{
     background-position: 48% 70%;

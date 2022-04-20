@@ -50,6 +50,16 @@ main div img{
   border-radius: 50%;
   width: 400px;
   height: 200px;
+  margin: 25px;
+  animation: spin 10s infinite ease-in-out;
+}
+@keyframes spin{
+  0%, 100%{
+    transform: translateX(0px) rotateY(0deg);
+  }
+  25%, 75%{
+    transform: translateX(0px) rotateY(1800deg);
+  }
 }
 main{
   font-family: sans-serif;
