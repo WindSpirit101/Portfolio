@@ -5,110 +5,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
-    <style>
-      header{
-        background-image: url(./images/girl-in-clouds.jpg);
-        background-position: 50% 80%;
-        background-repeat: no-repeat;
-        background-size: auto 800px;
-        padding: 36px;
-      }
-      h1{
-        color: white;
-        font-family: 'MonteCarlo', cursive;
-        font-size: 55px;
-        text-align: center;
-        text-shadow: black 1px 1px;
-      }
-      h3{
-        color: white;
-        font-family: sans-serif;
-        font-weight: normal;
-        text-align: center;
-      }
-      #navBar{
-        background-color: #95ceee;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-      }
-      section{
-        font-family: sans-serif;
-        font-weight: lighter;
-        text-align: center;
-      }
-      #navBar section{
-        flex: 1;
-        padding: 20px;
-      }
-      #navBar section a{
-        color: #0551a3;
-        text-decoration: none;
-      }
-      #navBar section:hover{
-        background: linear-gradient(to left, #eea88d, #eddf9d, white);
-      }
-      main div img{
-        border-radius: 50%;
-        width: 400px;
-        height: 200px;
-      }
-      main{
-        font-family: sans-serif;
-        font-weight: lighter;
-        text-align: center;
-      }
-      footer{
-        background-color: #c3e2f2;
-        display: flex;
-
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-      }
-      h4{
-        font-family: sans-serif;
-        font-size: 18px;
-        font-weight: lighter;
-        text-align: center;
-      }
-      footer ul li{
-        font-size: 12px;
-      }
-      #contact{
-        list-style-type: none;
-      }
-      @media screen and (max-width: 480px){
-        header{
-          background-position: 48% 70%;
-          background-size: auto 300px
-        }
-        main div img{
-          width: 200px;
-          height: 100px;
-        }
-        main div p{
-          font-size: 11px;
-        }
-        h1{
-          font-size: 40px;
-        }
-        h3{
-          font-size: 14px;
-        }
-        #navBar section{
-          font-size: 13px;
-          padding: 10px;
-        }
-        footer ul li{
-          font-size: 9px;
-        }
-        h4{
-          font-size: 13px;
-        }
-      }
-    </style>
+    <link type="text/css" rel="stylesheet" href="./css/index.css">
   </head>
   <body>
+    <nav id="navBar">
+      <section><a href="index.html">Home</a></section>
+      <section><a href="about.html">About</a></section>
+      <section><a href="gallery.html">Gallery</a></section>
+    </nav>
     <header>
       <h1>
         Wind Spirit
@@ -117,26 +21,21 @@
         Graphic Designer: Leanna Britt
       </h3>
     </header>
-    <nav id="navBar">
-      <section><a href="index.html">Home</a></section>
-      <section><a href="about.html">About</a></section>
-      <section><a href="gallery.html">Gallery</a></section>
-    </nav>
     <p></p>
     <main>
       <div id="quote">
-        <p>
-          "A heart without dreams is like a bird without feathers"
-        </p>
-        <p>
-          -Suzy Kassem
-        </p>
         <div style="text-align: center">
           <img
             src="./images/wind.png"
             alt="pocahontas drawing"
             />
         </div>
+        <p>
+          "A heart without dreams is like a bird without feathers"
+        </p>
+        <p>
+          -Suzy Kassem
+        </p>
       </div>
       <div id="mySaying">
         <p>
@@ -152,6 +51,7 @@
             <li>Phone: (850) 206-4137</li>
             <li>Instagram: leanna._.britt</li>
           </ul>
+          <h5>Click <a>here</a> to contact now</h5>
       </footer>
     </main>
   </body>

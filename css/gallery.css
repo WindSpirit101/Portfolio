@@ -1,10 +1,28 @@
+body{
+  background-image: url(../images/paper.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 header{
   background-image: url(../images/dandelion-field.jpg);
   background-position: 55% 50%;
   background-repeat: no-repeat;
-  background-size: auto 800px;
+  background-size: cover;
   color: black;
   padding: 36px;
+  --torn-shadow-offset-x: -2px;
+  --torn-shadow-offset-y: -2px;
+  --torn-shadow-background-color: rgba(0, 0, 0, 0.25);
+  --torn-background-color: #f15a2b;
+  --torn-left-width: 3px;
+  --torn-right-width: 3px;
+  --torn-left-clip-path: polygon(14% 0%, 17% 3%, 95% 5%, 34% 8%, 50% 10%, 28% 13%,
+    28% 15%, 28% 18%, 71% 20%, 1% 23%, 83% 25%, 76% 28%, 15% 30%, 85% 33%,
+    15% 35%, 88% 38%, 83% 40%, 78% 43%, 0% 45%, 22% 48%, calc(100% + 1px) 100%, calc(100% +1px) 0%);
+  --torn-right-clip-path: polygon(49% 0%, 19% 3%, 9% 5%, 25% 8%, 78% 10%, 38% 13%,
+    58% 15%, 88% 18%, 18% 20%, 98% 23%, 54% 25%, 69% 28%, 94% 30%, 5% 33%,
+    23% 35%, 28% 38%, 49% 93%, 78% 100%, -10% 100%, -10% 0%);
 }
 h1{
   font-family: 'MonteCarlo', cursive;
@@ -105,6 +123,12 @@ h4{
   font-size: 18px;
   font-weight: lighter;
 }
+h5{
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+}
 footer ul li{
   font-size: 12px;
 }
@@ -134,9 +158,9 @@ footer ul li{
     }
     main{
       display: grid;
-      grid-template-columns: 1fr 250px 1fr; /* repeat (#, repeating values)*/
-      grid-auto-rows: minmax(50px, auto);
-      gap: 20px 10px;
+      grid-template-columns: 1fr; /* repeat (#, repeating values)*/
+      grid-auto-rows: minmax(auto);
+      gap: 10px 10px;
       grid-template-areas:
         "content"
         "sidenav"
@@ -157,6 +181,9 @@ footer ul li{
     #PS{
       font-size: 20px;
     }
+    #webBanner{
+      justify-content: center;
+    }
     #scrollContainer{
       margin-bottom: 20px;
     }
@@ -165,5 +192,8 @@ footer ul li{
     }
     h4{
       font-size: 13px;
+    }
+    h5{
+      font-size: 9px;
     }
   }

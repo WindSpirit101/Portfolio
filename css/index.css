@@ -5,20 +5,21 @@ body{
   background-size: cover;
 }
 header{
-  background-image: url(../images/orange-clouds.jpg);
-  background-position: 50% 60%;
+  background-image: url(../images/girl-in-clouds.jpg);
+  background-position: 50% 80%;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
   padding: 36px;
 }
 h1{
+  color: white;
   font-family: 'MonteCarlo', cursive;
   font-size: 55px;
   text-align: center;
   text-shadow: black 1px 1px;
 }
 h3{
+  color: white;
   font-family: sans-serif;
   font-weight: normal;
   text-align: center;
@@ -45,68 +46,21 @@ section{
 #navBar section:hover{
   background: linear-gradient(to left, #eea88d, #eddf9d, white);
 }
-#about p{
-  font-family: sans-serif;
-  font-weight: lighter;
-  padding: 20px 20px;
-  text-align: center;
-}
-#about{
-  grid-area: content;
-}
-div img{
+main div img{
   border-radius: 50%;
-  height: 300px;
-  width: 220px;
-}
-#me{
-  grid-area: sidenav;
-  padding: 25px;
-  transition: transform;
-}
-#me:hover{
-  transform: scale(1.5);
-}
-#adobe ul{
-  font-family: sans-serif;
-  font-weight: lighter;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-#adobe{
-  grid-area: content2;
-}
-#education ul{
-  font-family: sans-serif;
-  font-weight: lighter;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-#education{
-  grid-area: content1;
+  width: 400px;
+  height: 200px;
 }
 main{
-  display: grid;
-  grid-template-columns: 1fr 250px 1fr; /* repeat (#, repeating values)*/
-  grid-auto-rows: minmax(50px, auto);
-  gap: 20px 10px;
-  grid-template-areas:
-    "sidenav content content"
-    "sidenav content1 content2"
-    "footer footer footer";
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
 }
 footer{
   background-color: #c3e2f2;
   display: flex;
-  font-family: sans-serif;
   flex-wrap: wrap;
-  grid-area: footer;
   justify-content: space-evenly;
-  justify-content: center;
 }
 h4{
   font-family: sans-serif;
@@ -120,9 +74,7 @@ h5{
   font-weight: lighter;
   text-align: center;
 }
-footer #contact{
-  justify-content: center;
-  flex: 1;
+footer ul li{
   font-size: 12px;
 }
 #contact{
@@ -133,24 +85,11 @@ footer #contact{
     background-position: 48% 70%;
     background-size: auto 300px
   }
-  #navBar section{
-    font-size: 13px;
-    padding: 10px;
+  main div img{
+    width: 200px;
+    height: 100px;
   }
-  main{
-    display: grid;
-    grid-template-columns: 1fr; /* repeat (#, repeating values)*/
-    grid-auto-rows: minmax(auto);
-    gap: 20px 10px;
-    grid-template-areas:
-      "content"
-      "sidenav"
-      "content1"
-      "content2"
-      "footer";
-    margin: 8px;
-  }
-  main div{
+  main div p{
     font-size: 11px;
   }
   h1{
@@ -159,10 +98,9 @@ footer #contact{
   h3{
     font-size: 14px;
   }
-  div img{
-    border-radius: 50%;
-    height: 200px;
-    width: 140px;
+  #navBar section{
+    font-size: 13px;
+    padding: 10px;
   }
   footer ul li{
     font-size: 9px;
