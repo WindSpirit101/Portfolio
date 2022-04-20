@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="./css/about.css">
   </head>
   <body>
@@ -60,8 +60,39 @@
             <li>Phone: (850) 206-4137</li>
             <li>Instagram: leanna._.britt</li>
           </ul>
-          <h5>Click <a>here</a> to contact now</h5>
+          <h5 class="popupTrigger">Click here to contact now</h5>
+          <div id="popupContainer" class="popupOpen">
+            <div id="popupBackground"></div>
+            <div id="popup">
+              <div>
+                <h3>Contact  Leanna Now</h3>
+                <div>
+                  <label for="yourMessage">Your message here:</label>
+                  <br>
+                  <textarea id="yourMessage" rows="5"></textarea>
+                </div>
+                <div id="buttonContainer">
+                  <input type="button" class="closePopup" value="Close">
+                  <input type="reset" value="Click to Reset">
+                  <input type="submit" value="Submit">
+                </div>
+              </div>
+            </div>
+          </div>
       </footer>
     </main>
+    <script type="text/javascript">
+      $('.popupTrigger').click(
+        function(){
+          $('#popupContainer').addClass('popupOpen');
+        }
+      );
+
+      $('.closePopup').click(
+        function(){
+          $('#popupContainer').removeClass('popupOpen');
+        }
+      );
+    </script>
   </body>
 </html>
