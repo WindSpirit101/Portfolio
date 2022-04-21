@@ -21,7 +21,6 @@ body {
     ". copyright copyright copyright ."
 }
 
-/* TODO: need to set grid-area for nav */
 #nav {
   background-color: #BBBBBB;
   display: flex;
@@ -63,15 +62,17 @@ body {
   color: black;
 }
 
-/* TODO: should be hidden by default */
 .navDropdown {
   background-color: #999999;
+  display: none;
   position: absolute;
   width: 200px;
 }
 
-/* TODO: need to reveal nav when javascript adds 'navOpen' class */
+/* TODO: need to reveal nav when javascript adds 'navOpen' class
+--idk if i did this right */
 .navItem.navOpen .navDropdown {
+  display: block;
 }
 
 .navDropdown a {
@@ -83,28 +84,24 @@ body {
   padding-top: 0;
 }
 
-/* TODO: need to set grid-area for header */
 #header {
-  /* TODO: fix image source url */
-  background-image: url("../images/green.jpg");
+  background-image: url("../images/lizard.jpg");
   background-size: cover;
+  background-position: 55% 45%;
   padding: 100px 100px;
   text-align: center;
   grid-area: header;
 }
 
-/* TODO: need to set grid-area for banner1 */
 #bannerItem1 {
   border-right: 3px solid #666666;
   grid-area: banner1;
 }
 
-/* TODO: need to set grid-area for banner2 */
 #bannerItem2 {
   grid-area: banner2;
 }
 
-/* TODO: need to set grid-area for banner3 */
 #bannerItem3 {
   border-left: 3px solid #666666;
   grid-area: banner3;
@@ -143,7 +140,6 @@ a.socialMediaLink img {
   width: 25px;
 }
 
-/* TODO: need to set grid-area for storefront */
 #storefront {
   background-color: white;
   text-align: center;
@@ -186,7 +182,6 @@ a.socialMediaLink img {
   padding: 4px;
 }
 
-/* TODO: need to set grid-area for blog */
 #blog {
   background-color: white;
   padding: 24px;
@@ -238,7 +233,6 @@ margin-bottom: 36px;
     color: #666666;
 }
 
-/* TODO: need to set grid-area for footer */
 #footer {
   background: linear-gradient(to bottom, #BBBBBB, #999999);
   border-right: 3px solid #666666;
@@ -267,14 +261,12 @@ margin-bottom: 36px;
   margin-left: 0;
 }
 
-/* TODO: need to set grid-area for footerSocial */
 #footerSocialMedia {
   background: linear-gradient(to bottom, #BBBBBB, #999999);
   padding: 24px;
   grid-area: footerSocial;
 }
 
-/* TODO: need to set grid-area for copyright */
 #copyright {
   background-color: #666666;
   color: white;
