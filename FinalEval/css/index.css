@@ -26,6 +26,7 @@ body {
   background-color: #BBBBBB;
   display: flex;
   flex-direction: row;
+  grid-area: nav;
 }
 
 #nav #navItems {
@@ -89,20 +90,24 @@ body {
   background-size: cover;
   padding: 100px 100px;
   text-align: center;
+  grid-area: header;
 }
 
 /* TODO: need to set grid-area for banner1 */
 #bannerItem1 {
   border-right: 3px solid #666666;
+  grid-area: banner1;
 }
 
 /* TODO: need to set grid-area for banner2 */
 #bannerItem2 {
+  grid-area: banner2;
 }
 
 /* TODO: need to set grid-area for banner3 */
 #bannerItem3 {
   border-left: 3px solid #666666;
+  grid-area: banner3;
 }
 
 #bannerItem1,
@@ -142,6 +147,7 @@ a.socialMediaLink img {
 #storefront {
   background-color: white;
   text-align: center;
+  grid-area: storefront;
 }
 
 /*
@@ -185,6 +191,7 @@ a.socialMediaLink img {
   background-color: white;
   padding: 24px;
   text-align: center;
+  grid-area: blog;
 }
 
 #blog h2 {
@@ -236,6 +243,7 @@ margin-bottom: 36px;
   background: linear-gradient(to bottom, #BBBBBB, #999999);
   border-right: 3px solid #666666;
   padding: 48px 24px 24px 24px;
+  grid-area: footer;
 }
 
 #footer #footerItems {
@@ -263,6 +271,7 @@ margin-bottom: 36px;
 #footerSocialMedia {
   background: linear-gradient(to bottom, #BBBBBB, #999999);
   padding: 24px;
+  grid-area: footerSocial;
 }
 
 /* TODO: need to set grid-area for copyright */
@@ -272,6 +281,7 @@ margin-bottom: 36px;
   font-size: 12px;
   grid-area: copyright;
   padding: 24px;
+  grid-area: copyright;
 }
 
 
