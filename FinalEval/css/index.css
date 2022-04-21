@@ -155,7 +155,6 @@ a.socialMediaLink img{
   flex-basis: 30%;
 }
 #shopGrid .shopItemCard {
-  background-color: #999999;
   flex: wrap;
   margin-bottom: 24px;
   padding: 12px;
@@ -173,7 +172,7 @@ a.socialMediaLink img{
   width: 100%;
 }
 #shopGrid .shopItemCard .shopItemBadge {
-  background-color: #BBBBBB;
+  background-color: #295B14;
   border-radius: 4px;
   display: inline-block;
   font-size: 12px;
