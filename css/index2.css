@@ -1,14 +1,13 @@
 body{
-  background-image: url(../images/lights.jpg);
+  background-image: url(../images/sunset.dandelion.jpg);
   background-position: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 header{
-  background-image: url(../images/girl-in-clouds.jpg);
-  background-position: 50% 80%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #eea98d;
+  opacity: 0.5;
   padding: 36px;
 }
 h1{
@@ -50,14 +49,16 @@ main div img{
   border-radius: 50%;
   width: 400px;
   height: 200px;
-  margin: 25px;
+  margin: 45px;
 }
 main{
+  color: white;
   font-family: sans-serif;
   font-weight: lighter;
   text-align: center;
 }
 footer{
+  color: black;
   background-color: #c3e2f2;
   display: flex;
   flex-wrap: wrap;
