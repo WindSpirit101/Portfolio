@@ -57,6 +57,23 @@ main{
   font-weight: lighter;
   text-align: center;
 }
+.mainarea{
+  margin: 25px;
+}
+.mainarea h3{
+  text-decoration-line: underline;
+  text-decoration-thickness: 45%;
+  text-decoration-color: #c3e2f2;
+  padding: 10px;
+}
+.mainarea input[type=button]{
+  border: 3px solid #eea88d;
+  border-radius: 6px;
+  padding: 6px;
+}
+.mainarea input:focus-visible{
+  outline: 0;
+}
 footer{
   color: black;
   background-color: #c3e2f2;
