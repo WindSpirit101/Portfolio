@@ -1,24 +1,26 @@
 body{
-  background-image: url(../images/sunset.dandelion.jpg);
+  background-image: url(../images/sunlight.dandelion.jpg);
   background-position: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 header{
-  background-color: #eea98d;
+  background-color: #eddf9d;
   opacity: 0.5;
   padding: 36px;
 }
 h1{
-  color: white;
+  opactiy: 100%;
+  color: black;
   font-family: 'MonteCarlo', cursive;
   font-size: 55px;
   text-align: center;
-  text-shadow: black 1px 1px;
+  text-shadow: white 1px 1px;
 }
 h3{
-  color: white;
+  opactiy: 100%;
+  color: black;
   font-family: sans-serif;
   font-weight: normal;
   text-align: center;
@@ -46,7 +48,7 @@ section{
   background: linear-gradient(to left, #eea88d, #eddf9d, white);
 }
 main{
-  color: white;
+  color: black;
   font-family: sans-serif;
   font-weight: lighter;
   text-align: center;
@@ -61,7 +63,7 @@ main{
   padding: 10px;
 }
 .mainarea input[type=button]{
-  border: 3px solid #eea88d;
+  border: 3px solid #eddf9d;
   border-radius: 6px;
   padding: 6px;
 }
