@@ -101,19 +101,19 @@ textarea{
   width: 500px;
 }
 #buttonContainer input[type=button]{
-  border: 3px solid #eea98d;
+  border: 3px solid #95ceee;
   border-radius: 6px;
   margin-right: 10px;
   padding: 10px;
 }
 #buttonContainer input[type=submit]{
-  border: 3px solid #eea98d;
+  border: 3px solid #95ceee;
   border-radius: 6px;
   margin-right: 10px;
   padding: 10px;
 }
 #buttonContainer input[type=reset]{
-  border: 3px solid #eea98d;
+  border: 3px solid #95ceee;
   border-radius: 6px;
   margin-right: 10px;
   padding: 10px;
@@ -152,8 +152,8 @@ textarea{
   font-size: 17px;
 }
 #popup{
-  background-color: lavenderblush;
-  border: 3px solid #eea98d;
+  background-color: #daefed;
+  border: 3px solid #95ceee;
   border-radius: 24px;
   padding: 36px;
   position: relative;
