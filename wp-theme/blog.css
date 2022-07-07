@@ -1,26 +1,26 @@
 body{
-  background-image: url(../images/orange-clouds.jpg);
+  background-image: url(../images/sunlight.dandelion.jpg);
   background-position: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 header{
-  background-size: cover;
-  color: white;
-  padding: 36px;
-}
-header{
-  background-color: rgba(238, 171, 104, 0.4);
+  background-color: #eddf9d;
+  opacity: 0.5;
   padding: 36px;
 }
 h1{
+  opactiy: 100%;
+  color: black;
   font-family: 'MonteCarlo', cursive;
   font-size: 55px;
   text-align: center;
-  text-shadow: black 1px 1px;
+  text-shadow: white 1px 1px;
 }
 h3{
+  opactiy: 100%;
+  color: black;
   font-family: sans-serif;
   font-weight: normal;
   text-align: center;
@@ -47,65 +47,34 @@ section{
 #navBar section:hover{
   background: linear-gradient(to left, #eea88d, #eddf9d, white);
 }
-#about p{
-  font-family: sans-serif;
-  font-weight: lighter;
-  padding: 20px 20px;
-  text-align: center;
-}
-#about{
-  grid-area: content;
-}
-div img{
-  border-radius: 50%;
-  height: 300px;
-  width: 220px;
-}
-#me{
-  grid-area: sidenav;
-  padding: 25px;
-  transition: transform;
-}
-#me:hover{
-  transform: scale(1.5);
-}
-#adobe ul{
-  font-family: sans-serif;
-  font-weight: lighter;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-#adobe{
-  grid-area: content2;
-}
-#education ul{
-  font-family: sans-serif;
-  font-weight: lighter;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-#education{
-  grid-area: content1;
-}
 main{
-  display: grid;
-  grid-template-columns: 1fr 250px 1fr; /* repeat (#, repeating values)*/
-  grid-auto-rows: minmax(50px, auto);
-  gap: 20px 10px;
-  grid-template-areas:
-    "sidenav content content"
-    "sidenav content1 content2"
-    "footer footer footer";
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+.mainarea{
+  margin: 25px;
+}
+.mainarea h3{
+  text-decoration-line: underline;
+  text-decoration-thickness: 45%;
+  text-decoration-color: #c3e2f2;
+  padding: 10px;
+}
+.mainarea input[type=button]{
+  border: 3px solid #eddf9d;
+  border-radius: 6px;
+  padding: 6px;
+}
+.mainarea input:focus-visible{
+  outline: 0;
 }
 footer{
+  color: black;
   background-color: #c3e2f2;
   display: flex;
   flex-wrap: wrap;
-  grid-area: footer;
   justify-content: space-evenly;
 }
 h4{
@@ -132,19 +101,19 @@ textarea{
   width: 500px;
 }
 #buttonContainer input[type=button]{
-  border: 3px solid #eea98d;
+  border: 3px solid #eddf9d;
   border-radius: 6px;
   margin-right: 10px;
   padding: 10px;
 }
 #buttonContainer input[type=submit]{
-  border: 3px solid #eea98d;
+  border: 3px solid #eddf9d;
   border-radius: 6px;
   margin-right: 10px;
   padding: 10px;
 }
 #buttonContainer input[type=reset]{
-  border: 3px solid #eea98d;
+  border: 3px solid #eddf9d;
   border-radius: 6px;
   margin-right: 10px;
   padding: 10px;
@@ -179,13 +148,12 @@ textarea{
   font-size: 20px;
 }
 #yourMessage{
-  font-family: sans-serif;
-  font-weight: lighter;
+  font-style: sans-serif;
   font-size: 17px;
 }
 #popup{
-  background-color: lavenderblush;
-  border: 3px solid #eea98d;
+  background-color: #f7f6eb;
+  border: 3px solid #eddf9d;
   border-radius: 24px;
   padding: 36px;
   position: relative;
@@ -196,34 +164,16 @@ textarea{
 #popup .closePopup{
   margin-top: 36px;
 }
-@media screen and (min-width: 800px) {
-  main{
-    justify-content: center;
-  }
-}
 @media screen and (max-width: 480px){
   header{
     background-position: 48% 70%;
     background-size: auto 300px
   }
-  #navBar section{
-    font-size: 13px;
-    padding: 10px;
+  main div img{
+    width: 200px;
+    height: 100px;
   }
-  main{
-    display: grid;
-    grid-template-columns: 1fr; /* repeat (#, repeating values)*/
-    grid-auto-rows: minmax(auto);
-    gap: 20px 10px;
-    grid-template-areas:
-      "content"
-      "sidenav"
-      "content1"
-      "content2"
-      "footer";
-    margin: 8px;
-  }
-  main div{
+  main div p{
     font-size: 11px;
   }
   h1{
@@ -232,10 +182,9 @@ textarea{
   h3{
     font-size: 14px;
   }
-  div img{
-    border-radius: 50%;
-    height: 200px;
-    width: 140px;
+  #navBar section{
+    font-size: 13px;
+    padding: 10px;
   }
   footer ul li{
     font-size: 9px;
